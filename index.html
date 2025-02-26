@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROSIRINDO - GROSIR PUPUK</title>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .text-transparent-bg {
+            background-image: url('/static/img/kebunsawit.jpg');
+            background-size: cover;
+            background-position: center;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section id="pertama">
+            <div class="relative h-screen bg-fixed bg-center bg-cover"
+                style="background-image: url('/static/img/bg_agro.png');">
+
+               
+                <div class="absolute inset-0 bg-black/30  "></div>
+
+               
+                <nav class="absolute top-0 left-0 w-full flex justify-between items-center px-10 py-5 text-white">
+                    <div class="text-2xl font-bold flex flex-row items-center gap-2">
+                        <img src="/static/img/logo/logo_agro.png" alt="logo agrosirindo" class="w-12 ">
+                        <h1>AGROSIRINDO</h1>
+                    </div>
+                   
+                    <ul class="hidden md:flex space-x-6">
+                        <li>
+                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                                <p>Home</p>
+                                <p>●</p>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                                <p>Tentang</p>
+                                <p>●</p>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                                <p>Produk</p>
+                                <p>●</p>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                                <p>Layanan</p>
+                                <p>●</p>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                                <p>Artikel</p>
+                                <p>●</p>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                                <p>Kontak</p>
+
+
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="relative hidden md:block">
+                        <input type="text" placeholder="Cari Pupuk"
+                            class="px-4 py-2 rounded-lg border focus:outline-none shadow-xl">
+                        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                        stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <button id="menu-toggle" class="md:hidden text-white focus:outline-none z-50 relative">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <div id="mobile-menu" class="fixed top-0 right-0 w-full h-full bg-green-800 text-white transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-6 text-xl z-40">
+                        <a href="#" class="hover:text-gray-300">Home</a>
+                        <a href="#" class="hover:text-gray-300">Tentang</a>
+                        <a href="#" class="hover:text-gray-300">Produk</a>
+                        <a href="#" class="hover:text-gray-300">Layanan</a>
+                        <a href="#" class="hover:text-gray-300">Artikel</a>
+                        <a href="#" class="hover:text-gray-300">Kontak</a>
+                        
+                        <!-- Close Button -->
+                        <button id="menu-close" class="mt-10 text-white">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <script>
+                        const menuToggle = document.getElementById('menu-toggle');
+                        const menuClose = document.getElementById('menu-close');
+                        const mobileMenu = document.getElementById('mobile-menu');
+                    
+                        menuToggle.addEventListener('click', () => {
+                            mobileMenu.classList.toggle('translate-x-full');
+                        });
+                    
+                        menuClose.addEventListener('click', () => {
+                            mobileMenu.classList.add('translate-x-full');
+                        });
+                    </script>
+                </nav>
+
+
+                <div class="absolute top-1/2 md:top-1/3 left-10 text-white max-w-sm md:max-w-xl">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">Grosir Pupuk Seluruh Indonesia</h1>
+                    <p class="mt-4 text-base md:text-lg">Tersedia stok berbagai jenis merek pupuk</p>
+                    <button class="mt-6 bg-green-500 px-8 py-3 text-lg rounded-full hover:bg-green-600">Hubungi
+                        Sekarang!</button>
+                </div>
+
+            </div>
+        </section>
+        <section id="section-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 p-8 mt-8">
+                <div class="">
+                    <div>
+                        <h1 class="text-3xl md:text-7xl font-bold ">AGROSIRINDO</h1>
+                        <h2 class="text-base md:text-2xl font-semibold ">Mitra Andalan Petani di Seluruh Indonesia</h2>
+                    </div>
+                    <div class="space-y-4 md:hidden">
+                        <p class="leading-7 text-sm mt-4">Kami adalah suplier pupuk terpercaya yang siap memenuhi kebutuhan Anda, baik
+                            dalam jumlah besar
+                            maupun kecil. Dengan pengalaman melayani petani dan grosir, kami memahami bahwa setiap lahan
+                            memiliki cerita uniknya.</p>
+                        <img src="static/img/pupukcontoh1.webp" alt="petani dan pupuk" class="rounded-3xl">
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mt-12 mb-8 md:mb-4 pl-4">Kenapa harus kami ?</h3>
+                        <div class="px-8 md:px-20 grid grid-cols-2  gap-12">
+                            <div class="flex flex-row items-center gap-2">
+                                <div class="bg-green-100 rounded-full ">
+                                    <svg fill="#0fa320" width="35px" height="35px" viewBox="0 0 59.998 59.998"
+                                        id="Capa_1" version="1.1" xml:space="preserve"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        stroke="#0fa320">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g>
+                                                <path
+                                                    d="M59.206,0.293c-0.391-0.391-1.023-0.391-1.414,0L54.085,4H30.802L1.532,33.511c-0.666,0.666-1.033,1.553-1.033,2.495 s0.367,1.829,1.033,2.495l20.466,20.466c0.687,0.687,1.588,1.031,2.491,1.031c0.907,0,1.814-0.347,2.509-1.041l28.501-29.271V5.414 l3.707-3.707C59.597,1.316,59.597,0.684,59.206,0.293z M53.499,28.874L25.574,57.553c-0.596,0.596-1.566,0.596-2.162,0 L2.946,37.087c-0.596-0.596-0.596-1.566,0.003-2.165L31.636,6h20.449l-4.833,4.833C46.461,10.309,45.516,10,44.499,10 c-2.757,0-5,2.243-5,5s2.243,5,5,5s5-2.243,5-5c0-1.017-0.309-1.962-0.833-2.753l4.833-4.833V28.874z M47.499,15 c0,1.654-1.346,3-3,3s-3-1.346-3-3s1.346-3,3-3c0.462,0,0.894,0.114,1.285,0.301l-1.992,1.992c-0.391,0.391-0.391,1.023,0,1.414 C43.987,15.902,44.243,16,44.499,16s0.512-0.098,0.707-0.293l1.992-1.992C47.386,14.106,47.499,14.538,47.499,15z">
+                                                </path>
+                                                <path
+                                                    d="M42.246,31.281L31.64,41.888c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293 s0.512-0.098,0.707-0.293L43.66,32.695c0.391-0.391,0.391-1.023,0-1.414S42.637,30.891,42.246,31.281z">
+                                                </path>
+                                                <path
+                                                    d="M45.779,27.74c-0.181,0.189-0.29,0.449-0.29,0.71c0,0.27,0.109,0.529,0.29,0.71c0.189,0.189,0.449,0.29,0.71,0.29 c0.26,0,0.52-0.101,0.699-0.29c0.19-0.181,0.301-0.44,0.301-0.71c0-0.261-0.11-0.521-0.301-0.71 C46.818,27.37,46.159,27.37,45.779,27.74z">
+                                                </path>
+                                                <path
+                                                    d="M37.296,19.26c0.391-0.391,0.391-1.023,0-1.414c-0.391-0.391-1.023-0.391-1.414,0L25.275,28.453 c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293L37.296,19.26z">
+                                                </path>
+                                                <path
+                                                    d="M33.761,31.281c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l7.071-7.071c0.391-0.391,0.391-1.023,0-1.414 s-1.023-0.391-1.414,0l-7.071,7.071C33.37,30.258,33.37,30.891,33.761,31.281z">
+                                                </path>
+                                                <path
+                                                    d="M28.104,35.523l-1.414,1.414c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293 s0.512-0.098,0.707-0.293l1.414-1.414c0.391-0.391,0.391-1.023,0-1.414S28.494,35.133,28.104,35.523z">
+                                                </path>
+                                                <path
+                                                    d="M17.497,28.745c0.256,0,0.512-0.098,0.707-0.293l10.606-10.606c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0 L16.79,27.038c-0.391,0.391-0.391,1.023,0,1.414C16.985,28.647,17.241,28.745,17.497,28.745z">
+                                                </path>
+                                                <path
+                                                    d="M31.639,14.6c0.26,0,0.521-0.1,0.71-0.29c0.181-0.189,0.29-0.439,0.29-0.71c0-0.26-0.109-0.52-0.3-0.71 c-0.37-0.37-1.03-0.37-1.41,0.01c-0.18,0.181-0.29,0.44-0.29,0.7s0.11,0.521,0.29,0.71C31.119,14.5,31.379,14.6,31.639,14.6z">
+                                                </path>
+                                                <path
+                                                    d="M22.449,31.28c-0.19,0.189-0.29,0.439-0.29,0.71c0,0.27,0.1,0.52,0.29,0.699c0.18,0.19,0.439,0.301,0.71,0.301 c0.26,0,0.52-0.11,0.699-0.29c0.19-0.19,0.301-0.45,0.301-0.71c0-0.261-0.11-0.521-0.301-0.71 C23.489,30.91,22.818,30.91,22.449,31.28z">
+                                                </path>
+                                                <path
+                                                    d="M32.349,34.109c0.181-0.18,0.29-0.439,0.29-0.71c0-0.26-0.109-0.52-0.29-0.71c-0.38-0.37-1.04-0.37-1.42,0 c-0.18,0.19-0.29,0.45-0.29,0.71c0,0.271,0.11,0.521,0.29,0.71c0.19,0.19,0.45,0.29,0.71,0.29S32.159,34.3,32.349,34.109z">
+                                                </path>
+                                                <path
+                                                    d="M24.651,47.627c0.615-0.929,0.909-2.041,0.814-3.172c-0.078-0.944-0.533-1.797-1.28-2.403 c-0.765-0.619-1.769-0.903-2.738-0.781l-2.802,0.35l-3.846-3.846c1.114-0.529,2.485-0.344,3.406,0.577 c0.391,0.391,1.023,0.391,1.414,0s0.391-1.023,0-1.414c-1.707-1.707-4.352-1.918-6.293-0.635l-0.779-0.779 c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l0.781,0.781c-0.614,0.928-0.908,2.041-0.813,3.172 c0.078,0.943,0.533,1.797,1.279,2.402c0.765,0.619,1.763,0.904,2.739,0.783l2.802-0.35l3.836,3.836 c-1.111,0.501-2.51,0.318-3.396-0.568c-0.391-0.391-1.023-0.391-1.414,0c-0.391,0.39-0.391,1.023,0,1.414 c0.943,0.944,2.199,1.465,3.535,1.465c0.996,0,1.946-0.291,2.757-0.829l0.622,0.622c0.195,0.195,0.451,0.293,0.707,0.293 s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L24.651,47.627z M14.871,42.092c-0.438,0.054-0.889-0.072-1.231-0.352 c-0.319-0.26-0.514-0.62-0.547-1.016c-0.044-0.536,0.07-1.059,0.295-1.532l2.742,2.742L14.871,42.092z M21.695,43.255 c0.433-0.059,0.886,0.072,1.229,0.351c0.32,0.26,0.515,0.62,0.548,1.016c0.044,0.536-0.07,1.059-0.296,1.532l-2.741-2.741 L21.695,43.255z">
+                                                </path>
+                                            </g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="text-sm">Harga sangat terjangkau</p>
+                            </div>
+                            <div class="flex flex-row items-center gap-2">
+                                <div class="bg-green-100 rounded-full ">
+                                    <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" stroke="#0ea420">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M15.5777 3.38197L17.5777 4.43152C19.7294 5.56066 20.8052 6.12523 21.4026 7.13974C22 8.15425 22 9.41667 22 11.9415V12.0585C22 14.5833 22 15.8458 21.4026 16.8603C20.8052 17.8748 19.7294 18.4393 17.5777 19.5685L15.5777 20.618C13.8221 21.5393 12.9443 22 12 22C11.0557 22 10.1779 21.5393 8.42229 20.618L6.42229 19.5685C4.27063 18.4393 3.19479 17.8748 2.5974 16.8603C2 15.8458 2 14.5833 2 12.0585V11.9415C2 9.41667 2 8.15425 2.5974 7.13974C3.19479 6.12523 4.27063 5.56066 6.42229 4.43152L8.42229 3.38197C10.1779 2.46066 11.0557 2 12 2C12.9443 2 13.8221 2.46066 15.5777 3.38197Z"
+                                                stroke="#0fa320" stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path
+                                                d="M21 7.5L17 9.5M12 12L3 7.5M12 12V21.5M12 12C12 12 14.7426 10.6287 16.5 9.75C16.6953 9.65237 17 9.5 17 9.5M17 9.5V13M17 9.5L7.5 4.5"
+                                                stroke="#0fa320" stroke-width="1.5" stroke-linecap="round"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="text-sm">Grosir</p>
+                            </div>
+                            <div class="flex flex-row items-center gap-2">
+                                <div class="bg-green-100 rounded-full ">
+                                    <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M8 12.3333L10.4615 15L16 9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                                stroke="#0fa320" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="text-sm">terpercaya</p>
+                            </div>
+                            <div class="flex flex-row items-center gap-2">
+                                <div class="bg-green-100 rounded-full ">
+                                    <svg width="35px" height="35px" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        fill="#0fa320">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <title>service_fill</title>
+                                            <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Media" transform="translate(-1536.000000, -48.000000)"
+                                                    fill-rule="nonzero">
+                                                    <g id="service_fill" transform="translate(1536.000000, 48.000000)">
+                                                        <path
+                                                            d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                                                            id="MingCute" fill-rule="nonzero"> </path>
+                                                        <path
+                                                            d="M5,9 C5,5.13401 8.13401,2 12,2 C15.866,2 19,5.13401 19,9 L19,10.0354 C20.6961,10.2781 22,11.7368 22,13.5 L22,13.75 C22,15.5252 20.469,17.0814 18.6678,16.9981 C17.9274,19.118 16.0464,20.5467 14.0149,20.9093 C13.5456,21.0808 12.9889,21 12.5,21 C11.6716,21 11,20.3284 11,19.5 C11,18.6716 11.6716,18 12.5,18 C13.2934,18 14.1712,17.8853 14.7065,18.6086 C16.0035,17.9919 17,16.6885 17,15 L17,9 C17,6.23858 14.7614,4 12,4 C9.23858,4 7,6.23858 7,9 L7,15.25 C7,16.2165 6.2165,17 5.25,17 C3.45507,17 2,15.5449 2,13.75 L2,13.5 C2,11.7368 3.30385,10.2781 5,10.0354 L5,9 Z"
+                                                            id="路径" fill="#0fa320"> </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="text-sm">Gratis konsultasi</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" py-4 md:p-8 space-x-2 md:space-x-4">
+                        <button
+                            class="mt-6 bg-green-500 px-6 py-2 text-xs md:text-lg text-white rounded-full hover:bg-green-600 hover:cursor-pointer">Lihat
+                            Katalog Pupuk</button>
+                        <button
+                            class="mt-6 px-6 py-2 text-xs md:text-lg rounded-full border border-green-500 hover:border-green-600 hover:text-green-700 hover:cursor-pointer">Lihat
+                            Perlengkapan Tani</button>
+                    </div>
+
+                </div>
+                <div class="space-y-4 hidden md:block">
+                    <p class="leading-7">Kami adalah suplier pupuk terpercaya yang siap memenuhi kebutuhan Anda, baik
+                        dalam jumlah besar
+                        maupun kecil. Dengan pengalaman melayani petani dan grosir, kami memahami bahwa setiap lahan
+                        memiliki cerita uniknya.</p>
+                    <img src="static/img/pupukcontoh1.webp" alt="petani dan pupuk" class="rounded-3xl">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class=" ">
+                    <div class="flex justify-center items-center p-8">
+                        <div x-data="{
+                                images: [
+                                    '/static/img/kebunsawit.jpg',
+                                    '/static/img/cs.jpg',
+                                    '/static/img/sawitnaik.jpg',
+                                    '/static/img/pohonpisang.jpg',
+                                    '/static/img/cabeii.jpg'
+                                ],
+                                currentIndex: 0,
+                                nextImage() {
+                                    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                                }
+                            }" x-init="setInterval(() => nextImage(), 3000)"
+                            class="w-[550px] h-[400px] relative overflow-hidden flex items-center justify-center shadow-2xl rounded-4xl">
+
+                            <template x-for="(image, index) in images" :key="index">
+                                <img :src="image" alt="Sliding Image"
+                                    class="absolute w-full h-full object-cover transition-opacity duration-1000"
+                                    :class="{'opacity-100': index === currentIndex, 'opacity-0': index !== currentIndex}">
+                            </template>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-full h-full flex items-center px-8 md:py-8 md:pr-20">
+                    <p class="md:hidden">
+                        <span class="font-semibold">Agrosirindo</span> hadir sebagai mitra terpercaya bagi petani, distributor, dan agen yang mencari pupuk
+                        berkualitas tinggi dengan harga terbaik. Didukung oleh tim ahli yang siap memberikan edukasi dan pendampingan
+                        langsung di lapangan. Bersama Agrosirindo, wujudkan pertanian yang lebih subur dan produktif!
+                    </p>
+                    <p class="hidden md:block">
+                        <span class="font-semibold">Agrosirindo</span> hadir sebagai mitra terpercaya bagi petani, distributor, dan agen yang mencari pupuk
+                        berkualitas tinggi dengan harga terbaik. Dengan komitmen untuk mendukung para petani, kami menyediakan berbagai jenis pupuk yang diformulasikan khusus untuk
+                        meningkatkan hasil panen. Didukung oleh tim ahli yang siap memberikan edukasi dan pendampingan
+                        langsung di lapangan, kami memastikan setiap pelanggan mendapatkan solusi terbaik sesuai
+                        kebutuhan. Bersama Agrosirindo, wujudkan pertanian yang lebih subur dan produktif!
+                    </p>
+                </div>
+            </div>
+        </section>
+         
+
+        <section class="w-full my-20">
+            <div class="p-4 md:p-8 mt-8 md:mt-0" data-aos="fade-up">
+                <h1 class="text-base md:text-3xl font-bold">Cari Produk yang Anda Butuhkan Ada Disini !!</h1>
+            </div>
+            <div class="grid grid-rows-2 md:flex md:space-x-4 items-center p-4 rounded-lg md:ml-16 gap-4" data-aos="fade-up">
+                <input id="searchInput" type="text" placeholder="Cari pupuk..."
+                    class="border border-gray-500 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-800"
+                    oninput="filterProducts()">
+                <div class="space-x-4">
+                    <div class="relative inline-block w-44">
+                        <select id="brandFilter"
+                            class="border border-gray-500 rounded-lg px-2 py-2 bg-white focus:ring-2 focus:ring-emerald-800"
+                            onchange="filterProducts()">
+                            <option value="">Pilih Merek Pupuk</option>
+                            <option value="SANBLEND">SANBLEND</option>
+                            <option value="MUTIARA">MUTIARA</option>
+                            <option value="PIM">PIM</option>
+                        </select>
+                    </div>
+                    <div class="relative inline-block w-40">
+                        <select id="locationFilter"
+                            class="border border-gray-500 rounded-lg px-2 py-2 bg-white focus:ring-2 focus:ring-emerald-800"
+                            onchange="filterProducts()">
+                            <option value="">Pilih Lokasi</option>
+                            <option value="Medan">Medan</option>
+                            <option value="Riau">Riau</option>
+                            <option value="Aceh">Aceh</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="ml-4 md:ml-20 mr-4 mb-8">
+                <div id="productList"
+                    class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 justify-center items-center">
+                     
+                </div>
+                
+            </div>
+            <div class="w-full flex justify-center ">
+                <a href="/produk">
+                    <button class="mt-6 bg-green-500 px-8 py-3 text-lg rounded-full hover:bg-green-600 text-white">
+                        lihat produk lainnya >
+                    </button>
+                </a>
+                
+            </div>
+        
+            <div id="productModal" class="hidden fixed inset-0  flex justify-center items-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg w-96 relative">
+                    <button onclick="closeModal()"
+                        class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+                    <h2 id="modalProductName" class="text-xl font-bold text-center"></h2>
+                    <img id="modalProductImage" class="w-60 h-64 object-cover my-4 rounded-lg shadow-md" alt="">
+
+                    <div class="text-gray-700 space-y-2">
+                        <p><strong>Merek:</strong> <span id="modalProductBrand"></span></p>
+                        <p><strong>Lokasi:</strong> <span id="modalProductLocation"></span></p>
+                        <p><strong>Harga:</strong> <span id="modalProductPrice" class="text-lg font-semibold"></span>
+                        </p>
+                        <p id="modalProductDiscount" class="text-sm text-red-600"></p>
+                        <p><strong>Deskripsi:</strong></p>
+                        <p id="modalProductDescription" class="text-sm"></p>
+                    </div>
+
+                    <div class="flex justify-between mt-4">
+                        <a id="buyProductButton" href="#"
+                            class="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk
+                            Ini</a>
+                        <button onclick="closeModal()"
+                            class="bg-gray-400 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-500">Tutup</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+         
+
+        <section class="w-full h-48 md:h-96 grid grid-cols-2 px-4 py-12 md:p-8  " data-aos="fade-up">
+            <div class="rounded-l-lg h-48 md:h-96 shadow-lg overflow-hidden  ">
+                <div class="w-full h-full bg-gray-300  flex justify-center items-center">
+                    <img class=" w-full h-full object-cover" src="/static/img/cs.jpg" alt="Gambar">
+                </div>
+            </div>
+
+            <div
+                class="rounded-r-lg shadow-lg bg-gray-50 p-2 md:p-6 flex flex-col space-y-4 md:space-y-8 justify-center items-center  ">
+                <p class="font-bold text-xl md:text-2xl text-center" data-aos="fade-up" data-aos-delay="300">Butuh
+                    bantuan?</p>
+                <p class="text-xs md:text-base text-center" data-aos="fade-up" data-aos-delay="500">Hubungi customer
+                    service kami untuk mendapatkan apa yang kamu butuhkan
+                </p>
+                <a href="https://api.whatsapp.com/send/?phone=628123456" data-aos="fade-up" data-aos-delay="800">
+                    <button
+                        class="bg-gray-100 text-blue-600 font-medium text-[10px] p-2 md:py-2 md:px-4 rounded-full border-2 border-emerald-700 hover:bg-lime-500 focus:ring-4 focus:ring-emerald-300 hover:text-white transition duration-300">
+                        Hubungi Customer Service
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section class="my-20  px-4 sm:px-6 md:px-8 lg:px-12" data-aos="fade-up" data-aos-delay="">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold   text-center" data-aos="fade-up"
+                data-aos-delay="300">Pertanyaan Terkait
+                Pupuk (FAQ)</h2>
+            <p class="text-gray-600 text-center mb-6 sm:mb-8 md:mb-10" data-aos="fade-up" data-aos-delay="300">
+                Informatif & Bermanfaat</p>
+            <div class="w-full max-w-xl sm:max-w-2xl lg:max-w-4xl mx-auto bg-white rounded-lg shadow-md">
+                <div class="border-b" data-aos="fade-up" data-aos-delay="300">
+                    <button
+                        class="w-full p-4 text-left flex justify-between items-center text-gray-700 hover:bg-gray-100"
+                        onclick="toggleFaq(1)">
+                        Apakah pupuk agrosirindo ramah lingkungan?
+                        <span id="icon1" class="transition-transform transform rotate-0">▼</span>
+                    </button>
+                    <div id="answer1" class="hidden p-4 pl-8 bg-emerald-800">
+                        <p class="text-white text-xs md:text-sm">Tentu saja, pupuk kami telah teruji secara ilmiah dan
+                            mendapat
+                            sertifikasi ramah lingkungan. Sangat cocok digunakan untuk semua jenis tanaman.</p>
+                    </div>
+                </div>
+
+                <div class="border-b" data-aos="fade-up" data-aos-delay="300">
+                    <button
+                        class="w-full p-4 text-left flex justify-between items-center text-gray-700 hover:bg-gray-100"
+                        onclick="toggleFaq(2)">
+                        Apa saja keunggulan pupuk agrosirindo?
+                        <span id="icon2" class="transition-transform transform rotate-0">▼</span>
+                    </button>
+                    <div id="answer2" class="hidden p-4 pl-8 bg-emerald-800">
+                        <p class="text-white text-xs md:text-sm">Pupuk kami membantu tanaman tumbuh lebih subur,
+                            meningkatkan hasil panen, dan memperbaiki struktur tanah. Pupuk kami juga dapat dimodifikasi
+                            sesuai dengan kebutuhan tanah anda!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border-b" data-aos="fade-up" data-aos-delay="300">
+                    <button
+                        class="w-full p-4 text-left flex justify-between items-center text-gray-700 hover:bg-gray-100"
+                        onclick="toggleFaq(3)">
+                        Apa produk dan layanan yang ditawarkan agrosirindo?
+                        <span id="icon3" class="transition-transform transform rotate-0">▼</span>
+                    </button>
+                    <div id="answer3" class="hidden p-4 pl-8 bg-emerald-800">
+                        <p class="text-white text-xs md:text-sm">Kami menyediakan berbagai jenis pupuk yang dapat
+                            disesuaikan dengan kebutuhan petani demi hasil produksi tanaman yang maksimal. Kami juga
+                            membekali tim lapangan yang akan meninjau langsung area dan melakukan edukasi kepada petani
+                            untuk menciptakan hasil yang melimpah.</p>
+                    </div>
+                </div>
+
+                <div class="border-b" data-aos="fade-up" data-aos-delay="300">
+                    <button
+                        class="w-full p-4 text-left flex justify-between items-center text-gray-700 hover:bg-gray-100"
+                        onclick="toggleFaq(4)">
+                        Berapa lama hasil pemakaian pupuk agrosirindo terlihat?
+                        <span id="icon4" class="transition-transform transform rotate-0">▼</span>
+                    </button>
+                    <div id="answer4" class="hidden p-4 pl-8 bg-emerald-800">
+                        <p class="text-white text-xs md:text-sm">Hasilnya mulai terlihat dalam waktu 3 bulan. Tanaman
+                            Anda
+                            akan terlihat lebih subur, sehat, dan produktif!</p>
+                    </div>
+                </div>
+
+                <div class="border-b" data-aos="fade-up" data-aos-delay="300">
+                    <button
+                        class="w-full p-4 text-left flex justify-between items-center text-gray-700 hover:bg-gray-100"
+                        onclick="toggleFaq(5)">
+                        Mengapa memilih pupuk agrosirindo?
+                        <span id="icon5" class="transition-transform transform rotate-0">▼</span>
+                    </button>
+                    <div id="answer5" class="hidden p-4 pl-8 bg-emerald-800">
+                        <p class="text-white text-xs md:text-sm">Karena kami berkomitmen untuk menyediakan pupuk
+                            berkualitas
+                            tinggi dengan teknologi terbaik, mendukung pertanian yang berkelanjutan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function toggleFaq(id) {
+                const answer = document.getElementById('answer' + id);
+                const icon = document.getElementById('icon' + id);
+
+                answer.classList.toggle('hidden');
+
+                icon.classList.toggle('rotate-180');
+            }
+        </script>
+
+        <section class="w-full p-2 md:p-8 " data-aos="fade-up" data-aos-delay="300">
+            <div>
+                <h1 class="font-bold text-4xl mb-4">
+                    Blog
+                </h1>
+            </div>
+            <div class="w-full grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-6 md:p-8">
+                {% for artikel in artikel_data %}
+                <a href="/blog/{{ artikel.slug }}">
+                    <div class="flex flex-col rounded-lg border-2 border-gray-300 h-80 md:h-96" data-aos="fade-up"
+                        data-aos-delay="400">
+                        <img class="w-full h-40 md:h-60 object-cover rounded-t-lg" src="{{ artikel.gambar }}"
+                            alt="Gambar Artikel">
+                        <div class="md:px-4">
+                            <h2 class="font-bold text-sm md:text-lg px-1 md:p-1 line-clamp-2">
+                                {{ artikel.judul }}
+                            </h2>
+                            <p class="text-xs md:text-base px-1 md:p-1">
+                                {{ artikel.deskripsi[:120] }}{% if artikel.deskripsi|length > 100 %}...{% endif %}
+                            </p>
+                        </div>
+                        <p class="font-semibold text-[8px] md:text-xs px-2 md:ml-1 bottom-0">
+                            {{ artikel.tanggal_dibuat.strftime('%d %B %Y') }}
+                        </p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            <div class="flex justify-center pt-4" data-aos="fade-up" data-aos-delay="300">
+                <a class="py-4 px-12 border-2 border-gray-300 rounded-full font-semibold text-lg   hover:bg-lime-500"
+                    href="/blog">
+                    Lihat Artikel Lainnya >
+                </a>
+            </div>
+        </section>
+
+        <footer class="w-full mt-20 pt-12 pb-8 bg-black text-white text-center">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <h1 class="text-6xl md:text-9xl   font-bold text-transparent-bg uppercase">AGROSIRINDO</h1>
+
+
+                <nav class="mt-6">
+                    <ul class="flex justify-center space-x-6 text-sm md:text-base">
+                        <li><a href="#" class="hover:text-green-500">Home</a></li>
+                        <li><a href="#" class="hover:text-green-500">Tentang</a></li>
+                        <li><a href="#" class="hover:text-green-500">Produk</a></li>
+                        <li><a href="#" class="hover:text-green-500">Artikel</a></li>
+                        <li><a href="#" class="hover:text-green-500">Kontak</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="mt-6 flex justify-center space-x-6">
+                    <a href="tel:+6281234567890" class="hover:text-gray-400 text-2xl">
+                        <svg width="30px" height="30px" viewBox="0 -0.5 25 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.36343 6.36195C7.24343 5.43495 7.55443 5.17495 7.92943 5.05395C8.18895 4.98595 8.46112 4.98217 8.72243 5.04295C9.06643 5.14295 9.15743 5.21895 10.2854 6.34295C11.2764 7.32995 11.3754 7.43695 11.4704 7.62995C11.6521 7.96873 11.6805 8.36894 11.5484 8.72995C11.4484 9.00495 11.3064 9.18695 10.7054 9.78995L10.3134 10.183C10.2105 10.2876 10.1863 10.4464 10.2534 10.577C11.1244 12.0628 12.36 13.3019 13.8434 14.177C14.0142 14.2684 14.2245 14.2389 14.3634 14.104L14.7404 13.733C14.9734 13.4941 15.2202 13.2691 15.4794 13.059C15.8866 12.809 16.3939 12.7867 16.8214 13C17.0304 13.1 17.0994 13.162 18.1214 14.182C19.1754 15.233 19.2054 15.266 19.3214 15.507C19.5397 15.9059 19.5374 16.3891 19.3154 16.786C19.2024 17.01 19.1334 17.091 18.5404 17.697C18.1824 18.063 17.8454 18.397 17.7914 18.446C17.3022 18.851 16.6746 19.0497 16.0414 19C14.883 18.8944 13.7617 18.5363 12.7564 17.951C10.5296 16.7711 8.63383 15.0521 7.24243 12.951C6.93937 12.5112 6.66994 12.0492 6.43643 11.569C5.81001 10.4953 5.48653 9.27189 5.50043 8.02895C5.54825 7.37871 5.86008 6.77637 6.36343 6.36195Z"
+                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="mailto:info@agrosirindo.com" class="hover:text-gray-400 text-2xl">
+                        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M4 7L10.94 11.3375C11.5885 11.7428 12.4115 11.7428 13.06 11.3375L20 7M5 18H19C20.1046 18 21 17.1046 21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/yourusername" target="_blank"
+                        class="hover:text-gray-400 text-2xl">
+                        <svg width="25px" height="25px" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)">
+                                </rect>
+                                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)">
+                                </rect>
+                                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)">
+                                </rect>
+                                <path
+                                    d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                                    fill="white"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                                    fill="white"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                                    fill="white"></path>
+                                <defs>
+                                    <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1"
+                                        gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+                                        <stop stop-color="#B13589"></stop>
+                                        <stop offset="0.79309" stop-color="#C62F94"></stop>
+                                        <stop offset="1" stop-color="#8A3AC8"></stop>
+                                    </radialGradient>
+                                    <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1"
+                                        gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+                                        <stop stop-color="#E0E8B7"></stop>
+                                        <stop offset="0.444662" stop-color="#FB8A2E"></stop>
+                                        <stop offset="0.71474" stop-color="#E2425C"></stop>
+                                        <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop>
+                                    </radialGradient>
+                                    <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1"
+                                        gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+                                        <stop offset="0.156701" stop-color="#406ADC"></stop>
+                                        <stop offset="0.467799" stop-color="#6A45BE"></stop>
+                                        <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop>
+                                    </radialGradient>
+                                </defs>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-gray-400 text-2xl">
+                        <svg width="25px" height="25px" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                    fill="#BFC8D0"></path>
+                                <path
+                                    d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                    fill="url(#paint0_linear_87_7264)"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                    fill="white"></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#5BD066"></stop>
+                                        <stop offset="1" stop-color="#27B43E"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+
+                <hr class="my-4">
+
+                <p class="mt-6 text-gray-400 text-sm">© 2025 AGROSIRINDO. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <div class="fixed bottom-4 right-4 flex flex-col items-end z-[999999999] transition-opacity duration-500 opacity-0 transform translate-y-4"
+            id="whatsappIcon">
+            <div id="whatsappForm"
+                class="hidden ml-4 mb-2 bg-white p-4 rounded-lg shadow-lg max-w-xs md:max-w-64  opacity-0 transform transition-all duration-300 ">
+                <h2 class="mb-4 font-semibold text-md  ">Halo, Ada yang bisa kami bantu?</h2>
+                <textarea id="message"
+                    class=" p-2 border border-gray-300 rounded resize-none overflow-auto no-scrollbar sm:w-full sm:h-32 md:w-56 md:h-40"
+                    placeholder="Tulis pesan Anda..."></textarea>
+                <button id="sendButton"
+                    class="mt-2 w-full bg-green-500 hover:bg-green-600 text-white p-2 rounded sm:py-1">Kirim</button>
+            </div>
+            <button id="whatsappButton"
+                class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-full shadow-lg focus:outline-none sm:p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48"
+                    class="w-8  h-8  ">
+                    <path fill="#fff"
+                        d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                    </path>
+                    <path fill="#fff"
+                        d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                    </path>
+                    <path fill="#cfd8dc"
+                        d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                    </path>
+                    <path fill="#40c351"
+                        d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                    </path>
+                    <path fill="#fff" fill-rule="evenodd"
+                        d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+
+        <script>
+            document.getElementById('whatsappButton').addEventListener('click', function () {
+                var form = document.getElementById('whatsappForm');
+                if (form.classList.contains('hidden')) {
+                    form.classList.remove('hidden');
+                    setTimeout(function () {
+                        form.classList.remove('opacity-0', 'transform', 'translate-y-4');
+                    }, 10);
+                } else {
+                    form.classList.add('opacity-0', 'transform', 'translate-y-4');
+                    setTimeout(function () {
+                        form.classList.add('hidden');
+                    }, 300);
+                }
+            });
+
+            document.getElementById('sendButton').addEventListener('click', function () {
+                var message = document.getElementById('message').value;
+                if (message.trim() !== '') {
+                    var whatsappURL = 'https://api.whatsapp.com/send?phone=6282174357697&text=' + encodeURIComponent(message);
+                    window.open(whatsappURL, '_blank');
+                } else {
+                    alert('Pesan tidak boleh kosong');
+                }
+            });
+
+            window.addEventListener('scroll', function () {
+                var section2 = document.getElementById('section-2');
+                var whatsappIcon = document.getElementById('whatsappIcon');
+
+
+                var section2Start = section2.offsetTop;
+                var section2Half = section2Start + (section2.offsetHeight / 2);
+
+
+                var scrollPos = window.scrollY + window.innerHeight;
+
+                if (scrollPos > section2Half) {
+                    whatsappIcon.classList.remove('opacity-0', 'translate-y-4');
+                } else {
+                    whatsappIcon.classList.add('opacity-0', 'translate-y-4');
+                }
+            });
+        </script>
+        <script src="/static/js/produk.js"></script>
+
+    </div>
+
+</body>
+
+</html>
