@@ -22,66 +22,76 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
+        .bg-agro {
+            background-image: url('https://cdn.glitch.global/0a2b53de-46f0-49c5-a96a-5027d271c776/static%2Fimg%2Fbg_agro.png?v=1740587505456');
+            /* Default untuk desktop */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        @media (max-width: 768px) {
+            .bg-agro {
+                background-image: url('https://cdn.glitch.global/0a2b53de-46f0-49c5-a96a-5027d271c776/static%2Fimg%2Fbg_agro_mobile.png?v=1740587237177');
+                /* Gambar untuk perangkat mobile */
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
         <section id="pertama">
-            <div class="relative h-screen bg-fixed bg-center bg-cover"
-                style="background-image: url('/static/img/bg_agro.png');">
+            <div class="relative h-screen bg-agro">
 
-               
+
                 <div class="absolute inset-0 bg-black/30  "></div>
 
-               
+
                 <nav class="absolute top-0 left-0 w-full flex justify-between items-center px-10 py-5 text-white">
-                    <div class="text-2xl font-bold flex flex-row items-center gap-2">
-                        <img src="/static/img/logo/logo_agro.png" alt="logo agrosirindo" class="w-12 ">
-                        <h1>AGROSIRINDO</h1>
+                    <div >
+                        <a href="/" class="text-2xl font-bold flex flex-row items-center gap-2">
+                            <img src="/static/img/logo/logo_agro.png" alt="logo agrosirindo" class="w-12 ">
+                            <h1>AGROSIRINDO</h1>
+                        </a>
+
                     </div>
-                   
+
                     <ul class="hidden md:flex space-x-6">
                         <li>
-                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                            <a href="/" class="hover:text-gray-300 flex flex-row items-center gap-4">
                                 <p>Home</p>
                                 <p>●</p>
 
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                            <a href="/about" class="hover:text-gray-300 flex flex-row items-center gap-4">
                                 <p>Tentang</p>
                                 <p>●</p>
 
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                            <a href="/produk" class="hover:text-gray-300 flex flex-row items-center gap-4">
                                 <p>Produk</p>
                                 <p>●</p>
 
                             </a>
                         </li>
-                        <li>
-                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
-                                <p>Layanan</p>
-                                <p>●</p>
 
-                            </a>
-                        </li>
                         <li>
-                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                            <a href="/blog" class="hover:text-gray-300 flex flex-row items-center gap-4">
                                 <p>Artikel</p>
                                 <p>●</p>
 
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-gray-300 flex flex-row items-center gap-4">
+                            <a href="/kontak" class="hover:text-gray-300 flex flex-row items-center gap-4">
                                 <p>Kontak</p>
-
-
                             </a>
                         </li>
 
@@ -104,22 +114,26 @@
                         </button>
                     </div>
                     <button id="menu-toggle" class="md:hidden text-white focus:outline-none z-50 relative">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
-                    <div id="mobile-menu" class="fixed top-0 right-0 w-full h-full bg-green-800 text-white transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-6 text-xl z-40">
-                        <a href="#" class="hover:text-gray-300">Home</a>
-                        <a href="#" class="hover:text-gray-300">Tentang</a>
-                        <a href="#" class="hover:text-gray-300">Produk</a>
-                        <a href="#" class="hover:text-gray-300">Layanan</a>
-                        <a href="#" class="hover:text-gray-300">Artikel</a>
-                        <a href="#" class="hover:text-gray-300">Kontak</a>
-                        
-                        <!-- Close Button -->
+                    <div id="mobile-menu"
+                        class="fixed top-0 right-0 w-full h-full bg-green-800 text-white transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-6 text-xl z-40">
+                        <a href="/" class="hover:text-gray-300">Home</a>
+                        <a href="/about" class="hover:text-gray-300">Tentang</a>
+                        <a href="/produk" class="hover:text-gray-300">Produk</a>
+
+                        <a href="/blog" class="hover:text-gray-300">Artikel</a>
+                        <a href="/kontak" class="hover:text-gray-300">Kontak</a>
+
                         <button id="menu-close" class="mt-10 text-white">
-                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
                             </svg>
                         </button>
                     </div>
@@ -127,11 +141,11 @@
                         const menuToggle = document.getElementById('menu-toggle');
                         const menuClose = document.getElementById('menu-close');
                         const mobileMenu = document.getElementById('mobile-menu');
-                    
+
                         menuToggle.addEventListener('click', () => {
                             mobileMenu.classList.toggle('translate-x-full');
                         });
-                    
+
                         menuClose.addEventListener('click', () => {
                             mobileMenu.classList.add('translate-x-full');
                         });
@@ -149,14 +163,15 @@
             </div>
         </section>
         <section id="section-2">
-            <div class="grid grid-cols-1 md:grid-cols-2 p-8 mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 p-4 md:p-8 mt-8">
                 <div class="">
                     <div>
                         <h1 class="text-3xl md:text-7xl font-bold ">AGROSIRINDO</h1>
                         <h2 class="text-base md:text-2xl font-semibold ">Mitra Andalan Petani di Seluruh Indonesia</h2>
                     </div>
                     <div class="space-y-4 md:hidden">
-                        <p class="leading-7 text-sm mt-4">Kami adalah suplier pupuk terpercaya yang siap memenuhi kebutuhan Anda, baik
+                        <p class="leading-7 text-sm mt-4">Kami adalah suplier pupuk terpercaya yang siap memenuhi
+                            kebutuhan Anda, baik
                             dalam jumlah besar
                             maupun kecil. Dengan pengalaman melayani petani dan grosir, kami memahami bahwa setiap lahan
                             memiliki cerita uniknya.</p>
@@ -297,13 +312,21 @@
 
                         </div>
                     </div>
-                    <div class=" py-4 md:p-8 space-x-2 md:space-x-4">
+                    <div class="hidden md:block py-4 md:p-8  md:space-x-4">
                         <button
                             class="mt-6 bg-green-500 px-6 py-2 text-xs md:text-lg text-white rounded-full hover:bg-green-600 hover:cursor-pointer">Lihat
                             Katalog Pupuk</button>
                         <button
                             class="mt-6 px-6 py-2 text-xs md:text-lg rounded-full border border-green-500 hover:border-green-600 hover:text-green-700 hover:cursor-pointer">Lihat
                             Perlengkapan Tani</button>
+                    </div>
+                    <div class="md:hidden py-4 md:p-8  md:space-x-4">
+                        <button
+                            class="mt-6 bg-green-500 px-6 py-2 text-xs md:text-lg text-white rounded-full hover:bg-green-600 hover:cursor-pointer">Lihat
+                            Katalog <br> Pupuk</button>
+                        <button
+                            class="mt-6 px-6 py-2 text-xs md:text-lg rounded-full border border-green-500 hover:border-green-600 hover:text-green-700 hover:cursor-pointer">Lihat
+                            Perlengkapan <br> Tani</button>
                     </div>
 
                 </div>
@@ -346,13 +369,17 @@
                 </div>
                 <div class="w-full h-full flex items-center px-8 md:py-8 md:pr-20">
                     <p class="md:hidden">
-                        <span class="font-semibold">Agrosirindo</span> hadir sebagai mitra terpercaya bagi petani, distributor, dan agen yang mencari pupuk
-                        berkualitas tinggi dengan harga terbaik. Didukung oleh tim ahli yang siap memberikan edukasi dan pendampingan
+                        <span class="font-semibold">Agrosirindo</span> hadir sebagai mitra terpercaya bagi petani,
+                        distributor, dan agen yang mencari pupuk
+                        berkualitas tinggi dengan harga terbaik. Didukung oleh tim ahli yang siap memberikan edukasi dan
+                        pendampingan
                         langsung di lapangan. Bersama Agrosirindo, wujudkan pertanian yang lebih subur dan produktif!
                     </p>
                     <p class="hidden md:block">
-                        <span class="font-semibold">Agrosirindo</span> hadir sebagai mitra terpercaya bagi petani, distributor, dan agen yang mencari pupuk
-                        berkualitas tinggi dengan harga terbaik. Dengan komitmen untuk mendukung para petani, kami menyediakan berbagai jenis pupuk yang diformulasikan khusus untuk
+                        <span class="font-semibold">Agrosirindo</span> hadir sebagai mitra terpercaya bagi petani,
+                        distributor, dan agen yang mencari pupuk
+                        berkualitas tinggi dengan harga terbaik. Dengan komitmen untuk mendukung para petani, kami
+                        menyediakan berbagai jenis pupuk yang diformulasikan khusus untuk
                         meningkatkan hasil panen. Didukung oleh tim ahli yang siap memberikan edukasi dan pendampingan
                         langsung di lapangan, kami memastikan setiap pelanggan mendapatkan solusi terbaik sesuai
                         kebutuhan. Bersama Agrosirindo, wujudkan pertanian yang lebih subur dan produktif!
@@ -360,20 +387,21 @@
                 </div>
             </div>
         </section>
-         
+
 
         <section class="w-full my-20">
             <div class="p-4 md:p-8 mt-8 md:mt-0" data-aos="fade-up">
                 <h1 class="text-base md:text-3xl font-bold">Cari Produk yang Anda Butuhkan Ada Disini !!</h1>
             </div>
-            <div class="grid grid-rows-2 md:flex md:space-x-4 items-center p-4 rounded-lg md:ml-16 gap-4" data-aos="fade-up">
+            <div class="grid grid-rows-2 md:flex md:space-x-4 items-center p-4 rounded-lg md:ml-16 gap-4"
+                data-aos="fade-up">
                 <input id="searchInput" type="text" placeholder="Cari pupuk..."
-                    class="border border-gray-500 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-800"
+                    class="w-80 md:w-2/3 border border-gray-500 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-800"
                     oninput="filterProducts()">
                 <div class="space-x-4">
-                    <div class="relative inline-block w-44">
+                    <div class="relative inline-block w-40 md:w-44">
                         <select id="brandFilter"
-                            class="border border-gray-500 rounded-lg px-2 py-2 bg-white focus:ring-2 focus:ring-emerald-800"
+                            class="text-sm md:text-base border border-gray-500 rounded-lg px-2 py-2 bg-white focus:ring-2 focus:ring-emerald-800"
                             onchange="filterProducts()">
                             <option value="">Pilih Merek Pupuk</option>
                             <option value="SANBLEND">SANBLEND</option>
@@ -381,9 +409,9 @@
                             <option value="PIM">PIM</option>
                         </select>
                     </div>
-                    <div class="relative inline-block w-40">
+                    <div class=" relative inline-block w-36 md:w-40">
                         <select id="locationFilter"
-                            class="border border-gray-500 rounded-lg px-2 py-2 bg-white focus:ring-2 focus:ring-emerald-800"
+                            class="text-sm md:text-base border border-gray-500 rounded-lg px-2 py-2 bg-white focus:ring-2 focus:ring-emerald-800"
                             onchange="filterProducts()">
                             <option value="">Pilih Lokasi</option>
                             <option value="Medan">Medan</option>
@@ -392,15 +420,15 @@
                         </select>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="ml-4 md:ml-20 mr-4 mb-8">
                 <div id="productList"
                     class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 justify-center items-center">
-                     
+
                 </div>
-                
+
             </div>
             <div class="w-full flex justify-center ">
                 <a href="/produk">
@@ -408,15 +436,15 @@
                         lihat produk lainnya >
                     </button>
                 </a>
-                
+
             </div>
-        
+
             <div id="productModal" class="hidden fixed inset-0  flex justify-center items-center">
                 <div class="bg-white p-6 rounded-lg shadow-lg w-96 relative">
                     <button onclick="closeModal()"
                         class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
                     <h2 id="modalProductName" class="text-xl font-bold text-center"></h2>
-                    <img id="modalProductImage" class="w-60 h-64 object-cover my-4 rounded-lg shadow-md" alt="">
+                    <img id="modalProductImage" class="w-60 h-64 object-cover my-4 rounded-lg shadow-md border" alt="">
 
                     <div class="text-gray-700 space-y-2">
                         <p><strong>Merek:</strong> <span id="modalProductBrand"></span></p>
@@ -429,7 +457,7 @@
                     </div>
 
                     <div class="flex justify-between mt-4">
-                        <a id="buyProductButton" href="#"
+                        <a id="buyProductButton" href="/form"
                             class="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk
                             Ini</a>
                         <button onclick="closeModal()"
@@ -441,7 +469,7 @@
 
         </section>
 
-         
+
 
         <section class="w-full h-48 md:h-96 grid grid-cols-2 px-4 py-12 md:p-8  " data-aos="fade-up">
             <div class="rounded-l-lg h-48 md:h-96 shadow-lg overflow-hidden  ">
@@ -454,19 +482,19 @@
                 class="rounded-r-lg shadow-lg bg-gray-50 p-2 md:p-6 flex flex-col space-y-4 md:space-y-8 justify-center items-center  ">
                 <p class="font-bold text-xl md:text-2xl text-center" data-aos="fade-up" data-aos-delay="300">Butuh
                     bantuan?</p>
-                <p class="text-xs md:text-base text-center" data-aos="fade-up" data-aos-delay="500">Hubungi customer
+                <p class="text-[8px] md:text-base text-center" data-aos="fade-up" data-aos-delay="500">Hubungi customer
                     service kami untuk mendapatkan apa yang kamu butuhkan
                 </p>
                 <a href="https://api.whatsapp.com/send/?phone=628123456" data-aos="fade-up" data-aos-delay="800">
                     <button
-                        class="bg-gray-100 text-blue-600 font-medium text-[10px] p-2 md:py-2 md:px-4 rounded-full border-2 border-emerald-700 hover:bg-lime-500 focus:ring-4 focus:ring-emerald-300 hover:text-white transition duration-300">
+                        class="bg-gray-100 text-blue-600 font-medium text-[7px] md:text-[10px] p-2 md:py-2 md:px-4 rounded-full border-2 border-emerald-700 hover:bg-lime-500 focus:ring-4 focus:ring-emerald-300 hover:text-white transition duration-300">
                         Hubungi Customer Service
                     </button>
                 </a>
             </div>
         </section>
 
-        <section class="my-20  px-4 sm:px-6 md:px-8 lg:px-12" data-aos="fade-up" data-aos-delay="">
+        <section class="mt-28 mb-16  px-4 sm:px-6 md:px-8 lg:px-12 " data-aos="fade-up" data-aos-delay="">
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold   text-center" data-aos="fade-up"
                 data-aos-delay="300">Pertanyaan Terkait
                 Pupuk (FAQ)</h2>
@@ -594,9 +622,9 @@
         </section>
 
         <footer class="w-full mt-20 pt-12 pb-8 bg-black text-white text-center">
-            <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-6xl mx-auto md:px-6">
 
-                <h1 class="text-6xl md:text-9xl   font-bold text-transparent-bg uppercase">AGROSIRINDO</h1>
+                <h1 class="text-5xl md:text-9xl   font-bold text-transparent-bg uppercase">AGROSIRINDO</h1>
 
 
                 <nav class="mt-6">

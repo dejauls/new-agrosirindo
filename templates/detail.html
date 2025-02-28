@@ -1,0 +1,79 @@
+<!-- detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-10">
+    <h1 class="text-2xl font-bold mb-5">Detail Produk</h1>
+
+    <div id="product-29" class="product-detail hidden p-5 border rounded shadow text-center">
+        <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-zinc.png"
+            alt="Zinc Sulfat DAUN SAWIT">
+        <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+        <h2 class="font-bold text-sm md:text-base">Zinc Sulfat DAUN SAWIT</h2>
+        <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 65.000</p>
+        <p class="text-xs line-through text-red-600 pb-2">Rp 70.000</p>
+        <p class="text-gray-600 text-sm">Pupuk Mikro untuk Meningkatkan Toleransi dan Pertumbuhan Tanaman!</p>
+    </div>
+
+    <div id="product-30" class="product-detail hidden p-5 border rounded shadow text-center">
+        <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-kieserite.png"
+            alt="KIESERITE DAUN SAWIT">
+        <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+        <h2 class="font-bold text-sm md:text-base">KIESERITE DAUN SAWIT</h2>
+        <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 65.000</p>
+        <p class="text-xs line-through text-red-600 pb-2">Rp 70.000</p>
+        <p class="text-gray-600 text-sm">Pupuk Magnesium untuk Pertumbuhan Optimal Tanaman Sawit!</p>
+    </div>
+
+    <div id="product-31" class="product-detail hidden p-5 border rounded shadow text-center">
+        <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-patenbiru.png"
+            alt="LAOYING MESTI-PATENBIRU">
+        <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+        <h2 class="font-bold text-sm md:text-base">LAOYING MESTI-PATENBIRU</h2>
+        <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+        <p class="text-xs pb-2">&nbsp;</p>
+        <p class="text-gray-600 text-sm">Pupuk Magnesium untuk Pertumbuhan Optimal Tanaman Sawit!</p>
+        <a id="buyProductButton" href="/form"
+            class="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk
+            Ini</a>
+    </div>
+
+
+    <a href="index.html" class="mt-5 inline-block px-4 py-2 bg-blue-500 text-white rounded">Kembali</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+
+            document.querySelectorAll('.product-detail').forEach(div => {
+                div.classList.add('hidden');
+            });
+
+            const selectedProduct = document.getElementById(`product-${productId}`);
+            if (selectedProduct) {
+                selectedProduct.classList.remove('hidden');
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const selectedProduct = urlParams.get('id'); // Ambil ID produk dari URL
+            
+            if (selectedProduct) {
+                const buyButton = document.getElementById("buyProductButton");
+                buyButton.href = `/form?id=${selectedProduct}`; // Tambahkan ID ke URL form
+            }
+        });
+    </script>
+</body>
+
+</html>

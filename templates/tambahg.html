@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Artikel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Tambah Artikel Baru</h2>
+        
+        <form action="{{ url_for('tambah_artikel') }}" method="POST" enctype="multipart/form-data">
+        
+            <div class="mb-4">
+                <label for="judul" class="block text-gray-700 font-medium">Judul Artikel</label>
+                <input type="text" id="judul" name="judul" required
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <div class="mb-4">
+                <label for="deskripsi" class="block text-gray-700 font-medium">Deskripsi Singkat</label>
+                <textarea id="deskripsi" name="deskripsi" rows="3" required
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label for="konten" class="block text-gray-700 font-medium">Konten</label>
+                <textarea id="konten" name="konten" rows="6" required
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label for="gambar" class="block text-gray-700 font-medium">Upload Gambar</label>
+                <input type="file" id="gambar" name="gambar"
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <button type="submit"
+                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md shadow">
+                Simpan Artikel
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
