@@ -133,6 +133,8 @@
     </nav>
   </section>
   <section id="section-2" class="w-full mt-12">
+    <h1 class="font-bold text-4xl text-center my-4 ml-4 md:ml-12">Daftar Produk Pupuk</h1>
+
     <div class="grid grid-rows-2 md:flex md:space-x-4 items-center p-4 rounded-lg md:ml-16 -z-10 relative">
 
       <input id="searchInputbody" type="text" placeholder="Cari pupuk..."
@@ -186,69 +188,630 @@
         </select>
       </div>
     </div>
-    <h1 class="font-bold text-2xl my-4 ml-4 md:ml-12">Daftar Produk Pupuk</h1>
-    <h1 class="text-2xl font-bold mb-5">Daftar Produk</h1>
-    <div class="grid grid-cols-3 gap-4">
-      <div class="p-5 border rounded shadow cursor-pointer text-center" onclick="goToDetail(29)">
-        <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-zinc.png"
-          alt="Zinc Sulfat DAUN SAWIT">
-        <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
-        <h2 class="font-bold text-sm md:text-base">Zinc Sulfat DAUN SAWIT</h2>
-        <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 65.000</p>
-        <p class="text-xs line-through text-red-600 pb-2">Rp 70.000</p>
-      </div>
 
-      <div class="p-5 border rounded shadow cursor-pointer text-center" onclick="goToDetail(30)">
-        <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-kieserite.png"
-          alt="KIESERITE DAUN SAWIT">
-        <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
-        <h2 class="font-bold text-sm md:text-base">KIESERITE DAUN SAWIT</h2>
-        <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 65.000</p>
-        <p class="text-xs line-through text-red-600 pb-2">Rp 70.000</p>
-      </div>
-
-      <div class="p-5 border rounded shadow cursor-pointer text-center" onclick="goToDetail(31)">
-        <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-patenbiru.png"
-          alt="LAOYING MESTI-PATENBIRU">
-        <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
-        <h2 class="font-bold text-sm md:text-base">LAOYING MESTI-PATENBIRU</h2>
-        <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
-      </div>
-    </div>
 
     <div class="ml-4 md:ml-20 mr-4 mb-8">
-      <div id="productList" class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 justify-center items-center">
-
-      </div>
-
-    </div>
-
-    <div id="productModal" class="hidden fixed inset-0  flex justify-center items-center">
-      <div class="bg-white p-6 rounded-lg shadow-lg w-96 relative">
-        <button onclick="closeModal()"
-          class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
-        <h2 id="modalProductName" class="text-xl font-bold text-center"></h2>
-        <img id="modalProductImage" class="w-60 h-64 object-cover my-4 rounded-lg shadow-md border" alt="">
-
-        <div class="text-gray-700 space-y-2">
-          <p><strong>Merek:</strong> <span id="modalProductBrand"></span></p>
-          <p><strong>Lokasi:</strong> <span id="modalProductLocation"></span></p>
-          <p><strong>Harga:</strong> <span id="modalProductPrice" class="text-lg font-semibold"></span>
-          </p>
-          <p id="modalProductDiscount" class="text-sm text-red-600"></p>
-          <p><strong>Deskripsi:</strong></p>
-          <p id="modalProductDescription" class="text-sm"></p>
+      <h1 class="text-2xl font-bold mt-10 mb-5">PUPUK SANBLEND</h1>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 justify-center items-center">
+        <div class=" rounded-lg p-2 md:p-4 h-60 md:h-80">
+          <img class="w-28 md:w-52 h-36 md:h-56 mx-auto" src="/static/img/logo/logosanblend.jpg"
+            alt="LOGO NPK SANBLEND">
+        </div>
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(1)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/sanblend151515.png"
+            alt="NPK SANBLEND 15-15-15">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">NPK SANBLEND 15-15-15</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 50.000</p>
         </div>
 
-        <div class="flex justify-between mt-4">
-          <a id="buyProductButton" href="/form"
-            class="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk
-            Ini</a>
-          <button onclick="closeModal()"
-            class="bg-gray-400 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-500">Tutup</button>
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(2)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/sanblend7634.png"
+            alt="NPK SANBLEND 7-6-34">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">NPK SANBLEND 7-6-34</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 50.000</p>
+
+        </div>
+
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(3)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/sanblend1212172.png"
+            alt="NPK SANBLEND 12-12-17-2">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">NPK SANBLEND 12-12-17-2</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 50.000</p>
+
+        </div>
+
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(4)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/sanblend136274.png"
+            alt="NPK SANBLEND 13-6-27-4">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">NPK SANBLEND 13-6-27-4</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 50.000</p>
+
         </div>
       </div>
-    </div>
+      <hr class="mt-12 mb-4">
+      <h1 class="text-2xl font-bold mb-5">PUPUK NPK MUTIARA</h1>
+
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 justify-center items-center">
+        <div class=" rounded-lg p-2 md:p-4 h-60 md:h-80">
+          <img class="w-28 md:w-52 h-36 md:h-60 mx-auto" src="/static/img/logo/logomutiara.png" alt="LOGO NPK MUTIARA">
+        </div>
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(5)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mutiara201010.png"
+            alt="NPK MUTIARA 20-10-10">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">NPK MUTIARA 20-10-10</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 60.000</p>
+        </div>
+
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(6)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mutiara92525.png"
+            alt="NPK MUTIARA 9-25-25">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">NPK MUTIARA 9-25-25</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 60.000</p>
+        </div>
+
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(7)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mutiara131324.png"
+            alt="NPK MUTIARA 13-13-24">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">NPK MUTIARA 13-13-24</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 60.000</p>
+        </div>
+
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(8)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mutiara161616.png"
+            alt="NPK MUTIARA 16-16-16">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">NPK MUTIARA 16-16-16</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 60.000</p>
+        </div>
+
+      </div>
+      <hr class="mt-12 mb-4">
+      <h1 class="text-2xl font-bold mb-5">PUPUK MEROKE</h1>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 justify-center items-center">
+        <div class=" rounded-lg p-2 md:p-4 h-60 md:h-80">
+          <img class="w-28 md:w-52 h-36 md:h-60 mx-auto" src="/static/img/logo/logomeroke.png" alt="LOGO NPK MEROKE">
+        </div>
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(9)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/merokecpn.png"
+            alt="MEROKE CPN">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">MEROKE CPN</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+        </div>
+
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(10)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/merokefosfat.png"
+            alt="MEROKE FOSFAT">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">MEROKE FOSFAT</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+        </div>
+        <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(11)">
+          <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/merokesop.png"
+            alt="MEROKE SOP">
+          <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+          <h2 class="font-bold text-sm md:text-base">MEROKE SOP</h2>
+          <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+        </div>
+
+      </div>
+      <hr class="mt-12 mb-4">
+      <h1 class="text-2xl font-bold mb-5">PUPUK DAUN SAWIT</h1>
+      <div class="grid grid-cols-5">
+        <div class=" rounded-lg p-2 md:p-4 h-60 md:h-80 cols-span-1">
+          <img class="w-28 md:w-52 h-36 md:h-60 mx-auto" src="/static/img/logo/logodaunsawit.png"
+            alt="LOGO pupuk DAUN SAWIT">
+        </div>
+        <div class="col-span-4">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 justify-center items-center">
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(12)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-za.png"
+                alt="ZA DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">ZA DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(13)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-rp.png"
+                alt="RP DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">RP DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(14)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover"
+                src="/static/img/produk/daunsawit-zakristal.png" alt="ZA KRISTAL DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">ZA KRISTAL DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(15)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-tsp.png"
+                alt="TSP DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">TSP DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(16)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover"
+                src="/static/img/produk/daunsawit-npk136274.png" alt="NPK 13.6.27.4 DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">NPK 13.6.27.4 DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(17)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover"
+                src="/static/img/produk/daunsawit-npk1212172.png" alt="NPK 12.12.17.2 DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">NPK 12.12.17.2 DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(18)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover"
+                src="/static/img/produk/daunsawit-npk151515.png" alt="NPK 15.15.15 DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">NPK 15.15.15 DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(19)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-map.png"
+                alt="MAP DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAP DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(20)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-kclmop.png"
+                alt="KCl/MOP DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">KCl/MOP DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(21)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-sp36.png"
+                alt="SP-36 DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">SP-36 DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(22)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-dap.png"
+                alt="DAP DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">DAP DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(23)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover"
+                src="/static/img/produk/daunsawit-granular.png" alt="Granular Amonium Klorida DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">Granular Amonium Klorida</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(24)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-mkp.png"
+                alt="MKP 52+34 DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MKP 52+34 DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(25)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-kno3.png"
+                alt="KNO3 DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">KNO3 DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(26)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-can.png"
+                alt="CAN DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">CAN DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(27)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-amonium.png"
+                alt="Ammonium Fosfat DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">Ammonium Fosfat DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(28)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover"
+                src="/static/img/produk/daunsawit-knomerah.png" alt="KNO Merah DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">KNO Merah DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(29)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-zinc.png"
+                alt="Zinc Sulfat DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">Zinc Sulfat DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(30)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover"
+                src="/static/img/produk/daunsawit-kieserite.png" alt="KIESERITE DAUN SAWIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">KIESERITE DAUN SAWIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-12 mb-4">
+      <h1 class="text-2xl  font-bold mb-5">PUPUK LAOYING</h1>
+      <div class="grid grid-cols-5">
+        <div class=" rounded-lg p-2 md:p-4 h-60 md:h-80">
+          <img class="w-28 md:w-52 h-36 md:h-60 mx-auto" src="/static/img/logo/logolaoying.png"
+            alt="LOGO PUPUK LAOYING">
+        </div>
+        <div class="col-span-4">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 justify-center items-center">
+
+            
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(31)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-patenbiru.png"
+                alt="LAOYING MESTI-PATENBIRU">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI-PATENBIRU</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(32)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/laoying-eurofoska.png"
+                alt="LAOYING EUROFOSKA">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING EUROFOSKA</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(33)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/laoying-jagopos.png"
+                alt="LAOYING JAGO FOS">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING JAGO FOS</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(34)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/laoying-maestro.png"
+                alt="LAOYING MESTRO">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTRO</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(35)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/laoying-mestac.png"
+                alt="LAOYING MESTAC">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTAC</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(36)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/laoying-mestacduo.png"
+                alt="LAOYING MESTAC DUO">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTAC DUO</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(37)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-cinta.png"
+                alt="LAOYING MESTI CINTA">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI CINTA</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(38)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-fero.png"
+                alt="LAOYING MESTI FERO">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI FERO</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(39)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-gas.png"
+                alt="LAOYING MESTI GAS">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI GAS</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(40)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-kali.png"
+                alt="LAOYING MESTI KALI">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI KALI</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(41)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-kalibutir.png"
+                alt="LAOYING MESTI KALI BUTIR">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI KALI BUTIR</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(42)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-kisrit.png"
+                alt="LAOYING MESTI KISRIT">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI KISRIT</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(43)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-kp.png"
+                alt="LAOYING MESTI KP">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI KP</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(44)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-mahakali.png"
+                alt="LAOYING MAHAKALI">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MAHAKALI</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(45)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-nitro.png"
+                alt="LAOYING MESTI NITRO">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI NITRO</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(46)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-patenhijo.png"
+                alt="LAOYING MESTI PATENHIJO">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI PATENHIJO</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(47)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-patenhijopremium.png"
+                alt="LAOYING MESTI PATENHIJO PREMIUM">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI PATENHIJO PREMIUM</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(48)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-rok.png"
+                alt="LAOYING MESTI ROCK">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI ROCK</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(49)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-tsp.png"
+                alt="LAOYING MESTI TSP">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI TSP</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(50)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-za.png"
+                alt="LAOYING MESTI ZA">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI ZA</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(51)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-zinc.png"
+                alt="LAOYING MESTI ZINC">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI ZINC</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(52)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mestical-gold.png"
+                alt="LAOYING MESTICAL GOLD">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTICAL GOLD</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(53)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesticopultra.png"
+                alt="LAOYING MESTI COP ULTRA">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI COP ULTRA</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(54)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mestifos.png"
+                alt="LAOYING MESTI FOS">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">LAOYING MESTI FOS</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+      <hr class="mt-12 mb-4">
+      <h1 class="text-2xl font-bold  mb-5">PUPUK MAHKOTA</h1>
+      <div class="grid grid-cols-5">
+        <div class=" rounded-lg p-2 md:p-4 h-60 md:h-80">
+          <img class="w-28 md:w-52 h-36 md:h-60 mx-auto" src="/static/img/logo/logomahkota.png"
+            alt="LOGO PUPUK MAHKOTA">
+        </div>
+        <div class="col-span-4">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 justify-center items-center">
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(55)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-borate.png"
+                alt="MAHKOTA BORATE">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA BORATE</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(56)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-coppersulphate.png"
+                alt="MAHKOTA COPPER SULPHATE">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA COPPER SULPHATE</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(57)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-kclkanada.png"
+                alt="MAHKOTA KCL CANADA">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA KCL CANADA</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(58)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-kieserite.png"
+                alt="MAHKOTA KIESERITE">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA KIESERITE</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(59)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-np16_20_125.png"
+                alt="MAHKOTA NP 16-20-125">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA NP 16-20-125</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(60)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-npk12_6_22_3.png"
+                alt="MAHKOTA NPK 12-6-22-3">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA NPK 12-6-22-3</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(61)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-npk12_12_17_2.png"
+                alt="MAHKOTA NPK 12-12-17-2">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA NPK 12-12-17-2</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(61)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-npk13_8_27_4.png"
+                alt="MAHKOTA 13-8-27-4">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA 13-8-27-4</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(63)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-npk15_15_6_4.png"
+                alt="MAHKOTA NPK 15-15-6-4">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA NPK 15-15-6-4</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(64)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-npk136274.png"
+                alt="MAHKOTA NPK 13-6-27-4">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA NPK 13-6-27-4</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(65)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-npk161616kirana.png"
+                alt="MAHKOTA NPK 16-16-16 KIRANA">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA NPK 16-16-16 KIRANA</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(66)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-rpmesir.png"
+                alt="MAHKOTA RP MESIR">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA RP MESIR</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(67)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-rpperu.png"
+                alt="MAHKOTA RP PERU">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA RP PERU</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(68)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-tsp.png"
+                alt="MAHKOTA TSP">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA TSP</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(69)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-za.png"
+                alt="MAHKOTA ZA">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA ZA</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(70)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-zincsulfate.png"
+                alt="MAHKOTA ZINC SULFATE">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA ZINC SULFATE</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="text-2xl text-center font-bold mt-12 mb-5">PUPUK MAHKOTA</h1>
+      <d class="grid grid-cols-5">
+        <div class=" rounded-lg p-2 md:p-4 h-60 md:h-80">
+          <img class="w-28 md:w-52 h-36 md:h-60 mx-auto" src="/static/img/logo/logomahkota.png"
+            alt="LOGO PUPUK MAHKOTA">
+        </div>
+        <div class="col-span-4">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 justify-center items-center">
+            <div class="shadow-lg border-2 border-gray-300 rounded-lg p-2 md:p-4 h-60 md:h-80" onclick="goToDetail(55)">
+              <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mahkota-borate.png"
+                alt="MAHKOTA BORATE">
+              <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
+              <h2 class="font-bold text-sm md:text-base">MAHKOTA BORATE</h2>
+              <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 70.000</p>
+            </div>
+          </div>
+        </div>   
+        
   </section>
 
   <footer class="w-full mt-20 pt-12 pb-8 bg-black text-white text-center">

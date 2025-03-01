@@ -24,8 +24,16 @@ document.querySelector("form").addEventListener("submit", function (event) {
     })
     .then(response => response.json())
     .then(data => {
-        alert(data.message);
-        window.location.href = "/"; // Redirect ke halaman utama setelah sukses
+        console.log(data);
+        if (data.whatsapp_link) {
+            alert(data.message);
+            window.location.href = data.whatsapp_link; // Arahkan user ke WhatsApp
+        } else {
+            alert("Terjadi kesalahan, silakan coba lagi.");
+        }
     })
-    .catch(error => console.error("Error:", error));
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Terjadi kesalahan, silakan coba lagi.");
+    });
 });
