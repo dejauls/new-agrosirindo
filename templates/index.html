@@ -25,7 +25,6 @@
 
         .bg-agro {
             background-image: url('https://cdn.glitch.global/0a2b53de-46f0-49c5-a96a-5027d271c776/static%2Fimg%2Fbg_agro.png?v=1740587505456');
-            /* Default untuk desktop */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -35,7 +34,6 @@
         @media (max-width: 768px) {
             .bg-agro {
                 background-image: url('https://cdn.glitch.global/0a2b53de-46f0-49c5-a96a-5027d271c776/static%2Fimg%2Fbg_agro_mobile.png?v=1740587237177');
-                /* Gambar untuk perangkat mobile */
             }
         }
     </style>
@@ -314,16 +312,18 @@
                     </div>
                     <div class="hidden md:block py-4 md:p-8  md:space-x-4">
                         <button
-                            class="mt-6 bg-green-500 px-6 py-2 text-xs md:text-lg text-white rounded-full hover:bg-green-600 hover:cursor-pointer">Lihat
-                            Katalog Pupuk</button>
+                            class="mt-6 bg-green-500 px-6 py-2 text-xs md:text-lg text-white rounded-full hover:bg-green-600 hover:cursor-pointer">
+                            <a href="/produk">Lihat Katalog Pupuk </a>    
+                        </button>
                         <button
                             class="mt-6 px-6 py-2 text-xs md:text-lg rounded-full border border-green-500 hover:border-green-600 hover:text-green-700 hover:cursor-pointer">Lihat
                             Perlengkapan Tani</button>
                     </div>
                     <div class="md:hidden py-4 md:p-8  md:space-x-4">
                         <button
-                            class="mt-6 bg-green-500 px-6 py-2 text-xs md:text-lg text-white rounded-full hover:bg-green-600 hover:cursor-pointer">Lihat
-                            Katalog <br> Pupuk</button>
+                            class="mt-6 bg-green-500 px-6 py-2 text-xs md:text-lg text-white rounded-full hover:bg-green-600 hover:cursor-pointer">
+                            <a href="/produk">Lihat <br> Katalog Pupuk </a> 
+                        </button>
                         <button
                             class="mt-6 px-6 py-2 text-xs md:text-lg rounded-full border border-green-500 hover:border-green-600 hover:text-green-700 hover:cursor-pointer">Lihat
                             Perlengkapan <br> Tani</button>
@@ -902,6 +902,7 @@
             }
         </script>
     </div>
+<script src="/static/js/cariproduk.js"></script>
 
 </body>
 

@@ -100,7 +100,6 @@
                 <a href="/blog" class="hover:text-gray-300">Artikel</a>
                 <a href="/kontak" class="hover:text-gray-300">Kontak</a>
 
-                <!-- Close Button -->
                 <button id="menu-close" class="mt-10 text-white">
                     <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +126,6 @@
     <div class="max-w-4xl mx-auto my-10 bg-white p-6 rounded-lg shadow-lg">
         <h1 class="text-2xl font-bold text-center mb-6">Form Pembelian</h1>
 
-        <!-- Data Produk yang Dipilih -->
         <div class="border p-4 rounded-lg shadow-md">
             <h2 class="text-lg font-semibold mb-2">Produk yang Dipilih</h2>
             <div class="flex items-center">
@@ -140,7 +138,6 @@
             </div>
         </div>
 
-        <!-- Form Pembeli -->
         <form class="mt-6">
             <h2 class="text-lg font-semibold mb-2">Data Pembeli</h2>
 
@@ -197,20 +194,17 @@
             </div>
 
 
-            <!-- Input Jumlah Produk -->
             <div class="mb-4">
                 <label class="block text-gray-700">Jumlah Produk</label>
                 <input type="number" id="productQuantity" min="1" value="1" class="w-full border p-2 rounded-lg"
                     required onchange="calculateTotal()">
             </div>
 
-            <!-- Total Harga -->
             <div class="mb-4">
                 <label class="block text-gray-700">Total Harga</label>
                 <p id="totalPrice" class="text-xl font-bold text-green-600">Rp 0</p>
             </div>
 
-            <!-- Tombol Konfirmasi Pembelian -->
             <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg font-semibold hover:bg-blue-700">
                 Konfirmasi Pembelian
             </button>
@@ -346,7 +340,6 @@
             const urlParams = new URLSearchParams(window.location.search);
             const selectedProduct = urlParams.get('id');
 
-            // Data produk
             const produkData = {
                 29: { 
                     nama: "Zinc Sulfat DAUN SAWIT", 
@@ -390,44 +383,44 @@
             document.getElementById("totalPrice").textContent = `Rp ${total.toLocaleString()}`;
         }
      </script>
-    // <script>
-    //     const urlParams = new URLSearchParams(window.location.search);
-    //     const selectedProduct = urlParams.get("product");
+     <!-- <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedProduct = urlParams.get("product");
 
-    //     const produkData = {
-    //         "Pupuk NPK SANBLEND 15-15-15": { nama: "Pupuk NPK SANBLEND 15-15-15", merek: "SANBLEND", harga: 50000, gambar: "/static/img/produk/sanblend151515.png" },
-    //         "Pupuk NPK SANBLEND 7-6-34": { nama: "Pupuk NPK SANBLEND 7-6-34", merek: "SANBLEND", harga: 50000, gambar: "/static/img/produk/sanblend7634.png" },
-    //         "Pupuk NPK SANBLEND 12-12-17-2": { nama: "Pupuk NPK SANBLEND 12-12-17-2", merek: "SANBLEND", harga: 50000, gambar: "/static/img/produk/sanblend1212172.png" },
-    //         "Pupuk NPK SANBLEND 13-6-27-4": { nama: "Pupuk NPK SANBLEND 13-6-27-4", merek: "SANBLEND", harga: 50000, gambar: "/static/img/produk/sanblend136274.png" },
-    //         "Pupuk NPK MUTIARA 20-10-10": { nama: "Pupuk NPK MUTIARA 20-10-10", merek: "MUTIARA", harga: 60000, gambar: "/static/img/produk/mutiara201010.png" },
-    //         "Pupuk NPK MUTIARA 9-25-25": { nama: "Pupuk NPK MUTIARA 9-25-25", merek: "MUTIARA", harga: 60000, gambar: "/static/img/produk/mutiara92525.png" },
-    //         "Pupuk NPK MUTIARA 13-13-24": { nama: "Pupuk NPK MUTIARA 13-13-24", merek: "MUTIARA", harga: 60000, gambar: "/static/img/produk/mutiara131324.png" },
-    //         "Pupuk NPK MUTIARA 16-16-16": { nama: "Pupuk NPK MUTIARA 16-16-16", merek: "MUTIARA", harga: 60000, gambar: "/static/img/produk/mutiara161616.png" },
-    //         "Pupuk MEROKE CPN": { nama: "Pupuk MEROKE CPN", merek: "MEROKE", harga: 70000, gambar: "/static/img/produk/merokecpn.png" },
-    //         "Pupuk MEROKE FOSFAT": { nama: "Pupuk MEROKE FOSFAT", merek: "MEROKE", harga: 70000, gambar: "/static/img/produk/merokefosfat.png" },
-    //         "Pupuk MEROKE SOP": { nama: "Pupuk MEROKE SOP", merek: "MEROKE", harga: 70000, gambar: "/static/img/produk/merokesop.png" }
-    //     };
+        const produkData = {
+            "Pupuk NPK SANBLEND 15-15-15": { nama: "Pupuk NPK SANBLEND 15-15-15", merek: "SANBLEND", harga: 50000, gambar: "/static/img/produk/sanblend151515.png" },
+            "Pupuk NPK SANBLEND 7-6-34": { nama: "Pupuk NPK SANBLEND 7-6-34", merek: "SANBLEND", harga: 50000, gambar: "/static/img/produk/sanblend7634.png" },
+            "Pupuk NPK SANBLEND 12-12-17-2": { nama: "Pupuk NPK SANBLEND 12-12-17-2", merek: "SANBLEND", harga: 50000, gambar: "/static/img/produk/sanblend1212172.png" },
+            "Pupuk NPK SANBLEND 13-6-27-4": { nama: "Pupuk NPK SANBLEND 13-6-27-4", merek: "SANBLEND", harga: 50000, gambar: "/static/img/produk/sanblend136274.png" },
+            "Pupuk NPK MUTIARA 20-10-10": { nama: "Pupuk NPK MUTIARA 20-10-10", merek: "MUTIARA", harga: 60000, gambar: "/static/img/produk/mutiara201010.png" },
+            "Pupuk NPK MUTIARA 9-25-25": { nama: "Pupuk NPK MUTIARA 9-25-25", merek: "MUTIARA", harga: 60000, gambar: "/static/img/produk/mutiara92525.png" },
+            "Pupuk NPK MUTIARA 13-13-24": { nama: "Pupuk NPK MUTIARA 13-13-24", merek: "MUTIARA", harga: 60000, gambar: "/static/img/produk/mutiara131324.png" },
+            "Pupuk NPK MUTIARA 16-16-16": { nama: "Pupuk NPK MUTIARA 16-16-16", merek: "MUTIARA", harga: 60000, gambar: "/static/img/produk/mutiara161616.png" },
+            "Pupuk MEROKE CPN": { nama: "Pupuk MEROKE CPN", merek: "MEROKE", harga: 70000, gambar: "/static/img/produk/merokecpn.png" },
+            "Pupuk MEROKE FOSFAT": { nama: "Pupuk MEROKE FOSFAT", merek: "MEROKE", harga: 70000, gambar: "/static/img/produk/merokefosfat.png" },
+            "Pupuk MEROKE SOP": { nama: "Pupuk MEROKE SOP", merek: "MEROKE", harga: 70000, gambar: "/static/img/produk/merokesop.png" }
+        };
 
-    //     if (selectedProduct && produkData[selectedProduct]) {
-    //         const produk = produkData[selectedProduct];
-    //         document.getElementById("productImage").src = produk.gambar;
-    //         document.getElementById("productName").textContent = produk.nama;
-    //         document.getElementById("productBrand").textContent = `Merek: ${produk.merek}`;
-    //         document.getElementById("productPrice").textContent = `Harga: Rp ${produk.harga.toLocaleString()}`;
-    //         document.getElementById("totalPrice").textContent = `Rp ${produk.harga.toLocaleString()}`;
+        if (selectedProduct && produkData[selectedProduct]) {
+            const produk = produkData[selectedProduct];
+            document.getElementById("productImage").src = produk.gambar;
+            document.getElementById("productName").textContent = produk.nama;
+            document.getElementById("productBrand").textContent = `Merek: ${produk.merek}`;
+            document.getElementById("productPrice").textContent = `Harga: Rp ${produk.harga.toLocaleString()}`;
+            document.getElementById("totalPrice").textContent = `Rp ${produk.harga.toLocaleString()}`;
 
-    //         window.productPrice = produk.harga;
-    //     } else {
-    //         alert("Produk tidak ditemukan!");
-    //         window.location.href = "index.html";
-    //     }
+            window.productPrice = produk.harga;
+        } else {
+            alert("Produk tidak ditemukan!");
+            window.location.href = "index.html";
+        }
 
-    //     function calculateTotal() {
-    //         const quantity = parseInt(document.getElementById("productQuantity").value) || 1;
-    //         const total = quantity * window.productPrice;
-    //         document.getElementById("totalPrice").textContent = `Rp ${total.toLocaleString()}`;
-    //     }
-    // </script>
+        function calculateTotal() {
+            const quantity = parseInt(document.getElementById("productQuantity").value) || 1;
+            const total = quantity * window.productPrice;
+            document.getElementById("totalPrice").textContent = `Rp ${total.toLocaleString()}`;
+        }
+    </script> -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             loadProvinces();
