@@ -15,17 +15,18 @@
 </head>
 <style>
     body {
-      font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
-  
+
     .text-transparent-bg {
-      background-image: url('/static/img/kebunsawit.jpg');
-      background-size: cover;
-      background-position: center;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+        background-image: url('/static/img/kebunsawit.jpg');
+        background-size: cover;
+        background-position: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-  </style>
+</style>
+
 <body>
     <section class="w-full h-24   relative"
         style="background-image: url('/static/img/bg_nav.png'); background-size: cover; background-position: center;">
@@ -129,8 +130,838 @@
     </section>
     <div class="md:p-10">
         <h1 class="text-2xl font-bold mb-5 p-8 md:p-0 underline">Detail Produk</h1>
+        <div id="product-1" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/sanblend-npk-15-15-15.png"
+                    alt="SANBLEND NPK 15-15-15">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/sanblend-npk-15-15-15.png" alt="SANBLEND NPK 15-15-15">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">SANBLEND NPK 15-15-15</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 15% Nitrogen (N), 15% Fosfor (P), 15% Kalium (K)</strong> : Komposisi seimbang untuk pertumbuhan 
+                    optimal tanaman, meningkatkan hasil panen, dan memperkuat daya tahan terhadap kondisi lingkungan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Memacu Pertumbuhan Vegetatif</strong> : Kandungan nitrogen tinggi membantu tanaman tumbuh lebih cepat
+                    dengan daun hijau yang lebih sehat.</p>
+                <p> <strong>- Meningkatkan Pembentukan Akar dan Bunga</strong> : Fosfor dalam pupuk ini mendukung perkembangan akar yang kuat
+                    serta meningkatkan pembentukan bunga dan buah.</p>
+                <p> <strong>- Meningkatkan Kualitas dan Kuantitas Hasil Panen</strong> : Kalium membantu memperbaiki ketahanan tanaman 
+                    terhadap penyakit serta meningkatkan kualitas hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk SANBLEND NPK 15-15-15</strong> adalah pilihan terbaik untuk berbagai jenis tanaman, baik hortikultura maupun 
+                    tanaman pangan. Dengan kandungan nutrisi yang seimbang, pupuk ini membantu tanaman tumbuh lebih sehat, lebih kuat, dan 
+                    memberikan hasil panen yang optimal.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-2" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/sanblend-7-6-34-te.png"
+                    alt="SANBLEND 7-6-34 +TE">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/sanblend-7-6-34-te.png" alt="SANBLEND 7-6-34 +TE">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">SANBLEND 7-6-34 +TE</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 7% Nitrogen (N), 6% Fosfor (P), 34% Kalium (K) + Trace Elements (TE)</strong> : Formula kaya kalium 
+                    untuk meningkatkan kualitas hasil panen dan ketahanan tanaman terhadap stres lingkungan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Memperkuat Struktur Tanaman</strong> : Kandungan kalium tinggi membantu memperkuat batang dan meningkatkan 
+                    daya tahan terhadap angin serta penyakit.</p>
+                <p> <strong>- Meningkatkan Kualitas dan Rasa Buah</strong> : Kalium sangat penting dalam pembentukan buah yang berkualitas, 
+                    meningkatkan rasa, warna, dan daya simpan.</p>
+                <p> <strong>- Mengoptimalkan Penyerapan Nutrisi</strong> : Unsur mikro (TE) membantu tanaman menyerap nutrisi lebih efisien 
+                    untuk pertumbuhan yang maksimal.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk SANBLEND 7-6-34 +TE</strong> sangat cocok untuk tanaman hortikultura dan buah-buahan yang memerlukan 
+                    asupan kalium tinggi. Dengan tambahan unsur mikro, pupuk ini memastikan tanaman tumbuh lebih sehat, lebih produktif, 
+                    dan menghasilkan panen berkualitas tinggi.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-3" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/sanblend-npk-12-12-17-2-te.png"
+                    alt="SANBLEND NPK 12-12-17-2 + TE">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/sanblend-npk-12-12-17-2-te.png" alt="SANBLEND NPK 12-12-17-2 + TE">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">SANBLEND NPK 12-12-17-2 + TE</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 12% Nitrogen (N), 12% Fosfor (P), 17% Kalium (K), 2% Magnesium (Mg) + Trace Elements (TE)</strong> : 
+                    Kombinasi nutrisi yang seimbang untuk pertumbuhan tanaman optimal, dengan tambahan magnesium untuk fotosintesis yang lebih baik.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Meningkatkan Pertumbuhan Tanaman</strong> : Nitrogen dan fosfor membantu mempercepat pertumbuhan akar, batang, dan daun.</p>
+                <p> <strong>- Memperbaiki Kualitas Buah</strong> : Kandungan kalium yang tinggi meningkatkan ukuran, rasa, dan daya simpan buah.</p>
+                <p> <strong>- Menjaga Kesehatan Tanaman</strong> : Magnesium dan unsur mikro (TE) mendukung proses fotosintesis dan ketahanan terhadap penyakit.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk SANBLEND NPK 12-12-17-2 + TE</strong> sangat cocok untuk berbagai jenis tanaman, termasuk tanaman hortikultura dan buah-buahan. 
+                    Dengan keseimbangan nutrisi yang optimal, pupuk ini membantu tanaman tumbuh lebih sehat, lebih produktif, dan menghasilkan hasil panen berkualitas tinggi.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-4" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/sanblend-npk-13-6-27-4-065b.png"
+                    alt="SANBLEND NPK 13-6-27-4 +0.65B">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/sanblend-npk-13-6-27-4-065b.png" alt="SANBLEND NPK 13-6-27-4 +0.65B">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">SANBLEND NPK 13-6-27-4 +0.65B</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 13% Nitrogen (N), 6% Fosfor (P), 27% Kalium (K), 4% Magnesium (Mg), 0.65% Boron (B)</strong> : 
+                    Formula kaya kalium dengan tambahan boron untuk meningkatkan produktivitas tanaman dan kualitas hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Meningkatkan Kualitas dan Ukuran Buah</strong> : Kandungan kalium tinggi membantu pembentukan buah yang lebih besar dan berkualitas.</p>
+                <p> <strong>- Memperkuat Struktur Tanaman</strong> : Magnesium membantu proses fotosintesis, sedangkan boron mendukung pembentukan dinding sel tanaman.</p>
+                <p> <strong>- Meningkatkan Daya Tahan Tanaman</strong> : Kombinasi unsur hara ini memperkuat tanaman terhadap cekaman lingkungan dan penyakit.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk SANBLEND NPK 13-6-27-4 +0.65B</strong> sangat cocok untuk tanaman hortikultura dan buah-buahan yang membutuhkan kalium tinggi. 
+                    Dengan tambahan boron dan magnesium, pupuk ini membantu tanaman tumbuh lebih sehat, lebih produktif, dan menghasilkan panen dengan kualitas terbaik.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-5" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/npk-mutiara-20-10-10.png"
+                    alt="NPK MUTIARA 20-10-10">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/npk-mutiara-20-10-10.png" alt="NPK MUTIARA 20-10-10">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">NPK MUTIARA 20-10-10</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 20% Nitrogen (N), 10% Fosfor (P), 10% Kalium (K)</strong> : 
+                    Formula tinggi nitrogen untuk mendukung pertumbuhan vegetatif tanaman secara maksimal.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Memacu Pertumbuhan Daun dan Batang</strong> : Kandungan nitrogen tinggi mempercepat pembentukan daun hijau dan batang yang kokoh.</p>
+                <p> <strong>- Meningkatkan Perakaran</strong> : Fosfor membantu perkembangan akar yang kuat untuk penyerapan nutrisi lebih efisien.</p>
+                <p> <strong>- Meningkatkan Produktivitas Tanaman</strong> : Komposisi seimbang mendukung pertumbuhan tanaman yang sehat dan hasil panen yang lebih baik.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk NPK MUTIARA 20-10-10</strong> sangat cocok untuk tanaman hortikultura, perkebunan, dan pertanian yang membutuhkan pertumbuhan vegetatif optimal. 
+                    Dengan formula seimbang, pupuk ini mendukung kesehatan tanaman serta meningkatkan hasil panen secara maksimal.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-6" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/npk-mutiara-9-25-25.png"
+                    alt="NPK MUTIARA 9-25-25">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/npk-mutiara-9-25-25.png" alt="NPK MUTIARA 9-25-25">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">NPK MUTIARA 9-25-25</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 9% Nitrogen (N), 25% Fosfor (P), 25% Kalium (K)</strong> : 
+                    Formula tinggi fosfor dan kalium untuk memperkuat akar serta meningkatkan kualitas hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Memperkuat Sistem Perakaran</strong> : Kandungan fosfor tinggi membantu perkembangan akar yang kuat dan sehat.</p>
+                <p> <strong>- Meningkatkan Produksi dan Kualitas Hasil Panen</strong> : Kalium tinggi mendukung pembentukan buah yang lebih besar, manis, dan tahan lama.</p>
+                <p> <strong>- Meningkatkan Daya Tahan Tanaman</strong> : Komposisi seimbang membantu tanaman lebih tahan terhadap kekeringan dan penyakit.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk NPK MUTIARA 9-25-25</strong> sangat cocok untuk tanaman yang membutuhkan fosfor dan kalium tinggi, 
+                    seperti tanaman hortikultura dan perkebunan. Pupuk ini membantu pertumbuhan optimal dan menghasilkan panen berkualitas tinggi.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-7" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/npk-mutiara-13-13-24.png"
+                    alt="NPK MUTIARA 13-13-24">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/npk-mutiara-13-13-24.png" alt="NPK MUTIARA 13-13-24">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">NPK MUTIARA 13-13-24</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 13% Nitrogen (N), 13% Fosfor (P), 24% Kalium (K)</strong> : 
+                    Formula seimbang dengan kalium tinggi untuk meningkatkan kualitas dan kuantitas hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Meningkatkan Kesehatan dan Produktivitas Tanaman</strong> : Nutrisi seimbang mendukung pertumbuhan yang optimal.</p>
+                <p> <strong>- Meningkatkan Kualitas Buah</strong> : Kalium tinggi membantu pembentukan buah yang lebih besar, manis, dan tahan lama.</p>
+                <p> <strong>- Memperkuat Struktur Tanaman</strong> : Fosfor mendukung perkembangan akar yang kuat, sementara nitrogen membantu pertumbuhan daun dan batang.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk NPK MUTIARA 13-13-24</strong> sangat cocok untuk berbagai jenis tanaman, terutama tanaman hortikultura dan perkebunan. 
+                    Dengan kandungan nutrisi yang seimbang, pupuk ini memastikan hasil panen lebih optimal dan berkualitas tinggi.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-8" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/npk-mutiara-16-16-16.png"
+                    alt="NPK MUTIARA 16-16-16">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/npk-mutiara-16-16-16.png" alt="NPK MUTIARA 16-16-16">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">NPK MUTIARA 16-16-16</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 16% Nitrogen (N), 16% Fosfor (P), 16% Kalium (K)</strong> : 
+                    Komposisi seimbang untuk mendukung pertumbuhan vegetatif dan generatif tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Meningkatkan Pertumbuhan Tanaman</strong> : Kandungan nitrogen mendukung pembentukan daun hijau dan batang kokoh.</p>
+                <p> <strong>- Mempercepat Pembungaan dan Pembuahan</strong> : Fosfor membantu mempercepat proses pembungaan dan pembuahan.</p>
+                <p> <strong>- Meningkatkan Kualitas Hasil Panen</strong> : Kalium tinggi membantu menghasilkan buah yang lebih besar, lebih manis, dan tahan lama.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk NPK MUTIARA 16-16-16</strong> sangat cocok untuk berbagai jenis tanaman, termasuk tanaman pangan, hortikultura, dan perkebunan. 
+                    Dengan keseimbangan nutrisi yang optimal, pupuk ini membantu meningkatkan hasil panen dan menjaga kesehatan tanaman.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-9" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/meroke-cpn.png"
+                    alt="MEROKE CPN">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/meroke-cpn.png" alt="MEROKE CPN">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">MEROKE CPN</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- Pupuk dengan kandungan kalsium dan nitrogen tinggi</strong> : 
+                    Membantu meningkatkan pertumbuhan tanaman serta memperkuat struktur sel.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Meningkatkan Pertumbuhan Tanaman</strong> : Kombinasi kalsium dan nitrogen membantu tanaman tumbuh lebih kuat dan sehat.</p>
+                <p> <strong>- Memperkuat Daya Tahan Tanaman</strong> : Kalsium mendukung ketahanan terhadap penyakit dan stres lingkungan.</p>
+                <p> <strong>- Meningkatkan Kualitas Hasil Panen</strong> : Membantu meningkatkan ukuran, warna, dan ketahanan pasca-panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk MEROKE CPN</strong> sangat cocok untuk berbagai jenis tanaman hortikultura dan perkebunan. 
+                    Dengan kandungan nutrisi yang optimal, pupuk ini membantu meningkatkan hasil panen dan menjaga kesehatan tanaman.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-10" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/meroke-fosfat.png"
+                    alt="MEROKE FOSFAT">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/meroke-fosfat.png" alt="MEROKE FOSFAT">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">MEROKE FOSFAT</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- Pupuk dengan kandungan fosfor tinggi</strong> : 
+                    Mendukung perkembangan akar, pembentukan bunga, dan produksi buah yang optimal.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Mempercepat Pertumbuhan Akar</strong> : Fosfor tinggi membantu sistem perakaran menjadi lebih kuat dan efisien dalam menyerap nutrisi.</p>
+                <p> <strong>- Meningkatkan Produksi Bunga dan Buah</strong> : Fosfor berperan dalam proses pembentukan bunga dan meningkatkan hasil panen.</p>
+                <p> <strong>- Cocok untuk Berbagai Jenis Tanaman</strong> : Ideal untuk tanaman pangan, hortikultura, dan perkebunan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk MEROKE FOSFAT</strong> sangat cocok untuk meningkatkan pertumbuhan tanaman sejak awal tanam, 
+                    memastikan perkembangan akar yang kuat, dan menghasilkan panen berkualitas tinggi.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-11" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/meroke-sop.png"
+                    alt="MEROKE SOP">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/meroke-sop.png" alt="MEROKE SOP">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">MEROKE SOP</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- Pupuk dengan kandungan Sulfat dan Kalium tinggi</strong> : 
+                    Sangat efektif untuk meningkatkan kualitas tanaman dan hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Meningkatkan Ketahanan Tanaman</strong> : Kalium membantu tanaman lebih tahan terhadap kekeringan dan penyakit.</p>
+                <p> <strong>- Meningkatkan Kualitas Buah</strong> : Kalium berperan dalam pembentukan warna, rasa, dan daya simpan hasil panen.</p>
+                <p> <strong>- Bebas Klorida</strong> : Cocok untuk tanaman yang sensitif terhadap klorida seperti kentang, tembakau, dan beberapa jenis buah-buahan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p> <strong>- Pupuk MEROKE SOP</strong> sangat cocok untuk berbagai jenis tanaman hortikultura dan perkebunan. 
+                    Dengan kandungan Sulfat dan Kalium yang tinggi, pupuk ini membantu meningkatkan hasil panen dan menjaga kesehatan tanaman.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-12" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/za-daun-sawit.png"
+                    alt="Pupuk ZA Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/za-daun-sawit.png" alt="Pupuk ZA Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk ZA Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 21% N (Nitrogen)</strong> : Menyediakan unsur hara nitrogen yang esensial untuk pertumbuhan daun, batang, dan tunas tanaman sawit.</p>
+                <p> <strong>- 24% S (Sulfur)</strong> : Memberikan sulfur yang mendukung proses fotosintesis dan meningkatkan kualitas hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Penambah Hara Nitrogen dan Sulfur</strong> : Pupuk ZA memberikan tambahan nitrogen dan sulfur yang sangat dibutuhkan oleh tanaman sawit untuk mendukung pertumbuhannya secara maksimal.</p>
+                <p> <strong>- Meningkatkan Kualitas Hasil Panen</strong> : Dapat meningkatkan rasa, warna, dan kadar vitamin pada hasil panen, menjadikannya lebih bernutrisi dan bernilai jual tinggi.</p>
+                <p> <strong>- Melindungi dari Jamur dan Penyakit</strong> : Pupuk ZA berfungsi melindungi tanaman dari serangan jamur dan penyakit, menjaga kesehatan tanaman secara keseluruhan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p>Dengan <strong>Pupuk ZA Daun Sawit</strong>, tanaman sawit Anda akan tumbuh lebih subur, lebih hijau, dan lebih sehat. 
+                Kandungan nitrogen dan sulfur yang tinggi mendukung pertumbuhan daun yang optimal, memperbaiki kualitas buah, serta meningkatkan ketahanan terhadap penyakit. 
+                Pupuk ini adalah solusi sempurna untuk petani sawit yang ingin mendapatkan hasil panen berkualitas tinggi dan optimal!</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-13" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/rp-daun-sawit.png"
+                    alt="RP Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/rp-daun-sawit.png" alt="RP Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">RP Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- Rock Phosphate Daun Sawit</strong> : Pupuk tunggal yang kaya akan fosfat alami.</p>
+                <p> <strong>- 27% P2O5 (Fosfat)</strong> : Kandungan fosfat tinggi yang berperan penting dalam pembentukan akar dan mempercepat proses pemupukan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Meningkatkan Pertumbuhan Akar</strong> : Fosfat yang terkandung dalam pupuk ini sangat efektif untuk memacu pertumbuhan akar tanaman, khususnya pada tahap awal pertumbuhannya.</p>
+                <p> <strong>- Kualitas Akar dan Batang yang Lebih Baik</strong> : Dengan pupuk RP, tanaman sawit akan memiliki akar yang lebih kuat dan batang yang lebih kokoh, mendukung pertumbuhan tanaman yang sehat.</p>
+                <p> <strong>- Mencegah Serangan Hama</strong> : Pupuk ini membantu menjaga kesehatan tanaman dengan meningkatkan ketahanannya terhadap serangan hama, menjaga tanaman tetap subur dan terhindar dari gangguan luar.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk RP Daun Sawit</strong> memberikan nutrisi yang tepat untuk mendukung pertumbuhan akar yang lebih kuat dan memperbaiki kualitas batang tanaman. 
+                Cocok digunakan pada tahap awal pertumbuhan sawit, membantu tanaman berkembang dengan baik dan sehat, serta meningkatkan ketahanan terhadap serangan hama. 
+                Ideal untuk memastikan pertumbuhan sawit yang optimal dan hasil panen yang maksimal.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-14" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/za-kristal-daun-sawit.png"
+                    alt="Pupuk ZA Kristal Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/za-kristal-daun-sawit.png" alt="Pupuk ZA Kristal Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk ZA Kristal Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 21% N (Nitrogen)</strong> : Kandungan nitrogen tinggi yang penting untuk mempercepat pertumbuhan daun dan batang tanaman sawit serta mendukung perkembangan vegetatif yang kuat.</p>
+                <p> <strong>- 24% S (Sulfur)</strong> : Mempercepat proses fotosintesis, memperbaiki kualitas tanah, dan mendukung pertumbuhan tanaman secara keseluruhan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Kegunaan :</h3>
+                <p> <strong>- Penambah Hara Nitrogen dan Sulfur</strong> : Pupuk ZA Kristal Daun Sawit memberikan tambahan unsur hara nitrogen dan sulfur yang penting bagi pertumbuhan tanaman, menjadikannya lebih subur dan sehat.</p>
+                <p> <strong>- Meningkatkan Kualitas Hasil Panen</strong> : Pupuk ini dapat meningkatkan kualitas rasa, warna, dan kadar vitamin pada hasil panen, menjadikan produk pertanian lebih bernutrisi dan lebih menarik di pasar.</p>
+                <p> <strong>- Butiran Kasar Berbentuk Kristal</strong> : Pupuk ZA Kristal hadir dalam bentuk kristal kasar yang ideal untuk aplikasi pada tanaman seperti bawang merah, dan sangat cocok untuk meningkatkan hasil tanaman lainnya.</p>
+                <p> <strong>- Cocok untuk Tanaman dengan Kebutuhan Hara Spesifik</strong> : Pupuk ini sangat efektif digunakan pada tanaman yang membutuhkan tambahan nitrogen dan sulfur tinggi untuk mendukung pertumbuhan optimal dan kualitas hasil yang lebih baik.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk ZA Kristal Daun Sawit</strong> adalah solusi ideal untuk petani yang ingin meningkatkan pertumbuhan daun sawit dan tanaman lainnya dengan hasil panen yang berkualitas. 
+                Dengan kandungan nitrogen dan sulfur yang seimbang, pupuk ini tidak hanya memperbaiki kualitas tanaman tetapi juga meningkatkan daya saing hasil pertanian Anda di pasar.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-15" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/tsp-daun-sawit.png"
+                    alt="Pupuk TSP Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/tsp-daun-sawit.png" alt="Pupuk TSP Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk TSP Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 46% P2O5 (Fosfat)</strong> : Kandungan fosfat tinggi yang penting untuk mempercepat pembentukan akar, batang yang kuat, serta mendukung pembungaan dan pemasakan biji.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Memperkuat Batang Tanaman</strong> : Pupuk TSP membantu batang tanaman sawit menjadi lebih kuat, sehingga tanaman tidak mudah roboh, terutama saat terkena angin atau cuaca ekstrem.</p>
+                <p> <strong>- Meningkatkan Daya Tahan terhadap Penyakit</strong> : Kandungan fosfat yang tinggi meningkatkan ketahanan tanaman terhadap serangan penyakit, menjaga kesehatan tanaman secara keseluruhan.</p>
+                <p> <strong>- Mempercepat Pembungaan dan Pemasakan Biji</strong> : Pupuk ini membantu mempercepat proses pembungaan dan pemasakan biji tanaman sawit, meningkatkan hasil panen yang lebih cepat dan efisien.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk TSP Daun Sawit</strong> adalah solusi tepat untuk petani yang ingin meningkatkan kekuatan tanaman, mempercepat pembungaan, dan memastikan hasil panen yang lebih maksimal. 
+                Dengan kandungan fosfat yang tinggi, pupuk ini mendukung pertumbuhan yang lebih sehat dan tahan lama, meningkatkan hasil panen serta memperkuat struktur tanaman agar lebih tahan terhadap kondisi lingkungan yang berat.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-16" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/tsp-daun-sawit.png"
+                    alt="Pupuk TSP Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/tsp-daun-sawit.png" alt="Pupuk TSP Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk TSP Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p> <strong>- 46% P2O5 (Fosfat)</strong> : Kandungan fosfat tinggi yang penting untuk mempercepat pembentukan akar, batang yang kuat, serta mendukung pembungaan dan pemasakan biji.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p> <strong>- Memperkuat Batang Tanaman</strong> : Pupuk TSP membantu batang tanaman sawit menjadi lebih kuat, sehingga tanaman tidak mudah roboh, terutama saat terkena angin atau cuaca ekstrem.</p>
+                <p> <strong>- Meningkatkan Daya Tahan terhadap Penyakit</strong> : Kandungan fosfat yang tinggi meningkatkan ketahanan tanaman terhadap serangan penyakit, menjaga kesehatan tanaman secara keseluruhan.</p>
+                <p> <strong>- Mempercepat Pembungaan dan Pemasakan Biji</strong> : Pupuk ini membantu mempercepat proses pembungaan dan pemasakan biji tanaman sawit, meningkatkan hasil panen yang lebih cepat dan efisien.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk TSP Daun Sawit</strong> adalah solusi tepat untuk petani yang ingin meningkatkan kekuatan tanaman, mempercepat pembungaan, dan memastikan hasil panen yang lebih maksimal. 
+                Dengan kandungan fosfat yang tinggi, pupuk ini mendukung pertumbuhan yang lebih sehat dan tahan lama, meningkatkan hasil panen serta memperkuat struktur tanaman agar lebih tahan terhadap kondisi lingkungan yang berat.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-17" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/npk-13-6-27-4b-daun-sawit.png"
+                    alt="Pupuk NPK 13.6.27.4+B Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/npk-13-6-27-4b-daun-sawit.png" alt="Pupuk NPK 13.6.27.4+B Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk NPK 13.6.27.4+B Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 13% N (Nitrogen)</strong>: Mendukung pertumbuhan vegetatif tanaman dengan mempercepat pembentukan daun dan batang yang kuat.</p>
+                <p><strong>- 6% P2O5 (Fosfat)</strong>: Meningkatkan pengembangan akar dan mendukung proses pembungaan serta pematangan buah.</p>
+                <p><strong>- 27% K2O (Kalium Oksida)</strong>: Membantu tanaman lebih tahan terhadap stres lingkungan, meningkatkan ketahanan terhadap penyakit, dan mempercepat proses pemasakan hasil panen.</p>
+                <p><strong>- 4% MGO (Magnesium Oksida)</strong>: Meningkatkan proses fotosintesis dan kualitas buah serta memperbaiki keseimbangan nutrisi dalam tanaman.</p>
+                <p><strong>- 0,65% B2O3 (Boron Trioksida)</strong>: Meningkatkan pembentukan bunga dan buah, serta membantu proses penyerapan unsur hara lainnya dengan lebih efisien.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Kualitas Hasil Panen</strong>: Pupuk ini sangat efektif dalam meningkatkan ukuran, rasa, dan warna hasil panen pada tanaman buah, menjadikannya lebih bernutrisi dan menarik di pasar.</p>
+                <p><strong>- Pertumbuhan yang Seimbang</strong>: Dengan kandungan N, P, K, Magnesium, dan Boron yang tepat, pupuk ini mendukung pertumbuhan tanaman secara menyeluruh, meningkatkan kualitas batang, daun, bunga, dan buah.</p>
+                <p><strong>- Meningkatkan Ketahanan Tanaman</strong>: Kandungan kalium oksida dan magnesium meningkatkan daya tahan tanaman terhadap stres, penyakit, dan kondisi cuaca yang ekstrem.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk NPK 13.6.27.4+B Daun Sawit</strong> adalah pilihan tepat bagi petani yang ingin meningkatkan kualitas hasil panen tanaman buah dan sawit. Pupuk ini mendukung tanaman agar tumbuh subur, menghasilkan buah dengan ukuran lebih besar, rasa yang lebih baik, dan warna yang lebih menarik. 
+                Selain itu, tanaman Anda akan lebih tahan terhadap serangan hama dan penyakit, menjadikan pertanian Anda lebih produktif dan menguntungkan.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-18" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/npk-12-12-17-2-daun-sawit.png"
+                    alt="Pupuk NPK 12.12.17.2 Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/npk-12-12-17-2-daun-sawit.png" alt="Pupuk NPK 12.12.17.2 Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk NPK 12.12.17.2 Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 12% N (Nitrogen)</strong>: Mendukung pertumbuhan vegetatif tanaman, meningkatkan kesehatan daun, dan mempercepat pertumbuhan batang serta tunas.</p>
+                <p><strong>- 12% P2O5 (Fosfat)</strong>: Menstimulasi pengembangan akar yang lebih kuat dan mendukung proses pembungaan serta pembentukan buah/biji.</p>
+                <p><strong>- 17% K2O (Kalium Oksida)</strong>: Membantu tanaman untuk lebih tahan terhadap stres, memperkuat ketahanan terhadap penyakit, dan mempercepat pemasakan hasil panen.</p>
+                <p><strong>- 2% MGO (Magnesium Oksida)</strong>: Meningkatkan proses fotosintesis, memberikan tanaman warna hijau yang lebih cerah, dan memperbaiki keseimbangan nutrisi.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Mempercepat Pertumbuhan Tanaman</strong>: Pupuk ini sangat efektif untuk mempercepat pertumbuhan tanaman, menjadikannya lebih hijau dan subur, serta meningkatkan kesehatan secara keseluruhan.</p>
+                <p><strong>- Meningkatkan Pembungaan dan Pembentukan Buah</strong>: Membantu memacu pembungaan dan mempercepat pembentukan serta pemasakan biji dan buah, mendukung hasil panen yang lebih cepat dan lebih maksimal.</p>
+                <p><strong>- Nutrisi Seimbang untuk Tanaman</strong>: Dengan kandungan yang seimbang antara nitrogen, fosfat, kalium, dan magnesium, pupuk ini memberikan nutrisi yang diperlukan oleh tanaman untuk tumbuh sehat dan kuat.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk NPK 12.12.17.2 Daun Sawit</strong> adalah pilihan sempurna untuk petani yang ingin meningkatkan pertumbuhan tanaman, mempercepat pembungaan, dan mendapatkan hasil panen berkualitas tinggi. 
+                Pupuk ini mendukung tanaman sawit agar tumbuh subur, memiliki daun yang hijau cerah, dan mempercepat proses pembentukan buah dan biji, menjadikan setiap hasil panen lebih produktif dan bernilai tinggi.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-19" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/npk-15-15-15-daun-sawit.png"
+                    alt="Pupuk NPK 15.15.15 Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/npk-15-15-15-daun-sawit.png" alt="Pupuk NPK 15.15.15 Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk NPK 15.15.15 Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 15% N (Nitrogen)</strong>: Mendukung pertumbuhan vegetatif dengan meningkatkan jumlah tunas baru, mempercepat pertumbuhan daun dan batang, serta menjaga tanaman tetap hijau subur.</p>
+                <p><strong>- 15% P2O5 (Fosfat)</strong>: Menstimulasi perkembangan akar yang kuat dan memperbaiki pembungaan serta pembentukan buah/biji.</p>
+                <p><strong>- 15% K2O (Kalium Oksida)</strong>: Meningkatkan daya tahan tanaman terhadap penyakit dan stres, serta membantu pemasakan hasil panen dengan lebih cepat.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Jumlah Tunas Baru</strong>: Pupuk ini efektif untuk merangsang pertumbuhan tunas baru, meningkatkan perkembangan vegetatif tanaman sawit.</p>
+                <p><strong>- Memperbaiki Warna Daun</strong>: Dengan kandungan nitrogen yang seimbang, pupuk ini membuat daun tanaman sawit lebih hijau, menandakan kesehatan dan pertumbuhan optimal.</p>
+                <p><strong>- Merangsang Pertumbuhan Maksimal</strong>: Kandungan fosfat dan kalium oksida yang tinggi mendukung pertumbuhan maksimal tanaman, meningkatkan ketahanan terhadap penyakit serta mempercepat pemasakan buah.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk NPK 15.15.15 Daun Sawit</strong> adalah pilihan ideal untuk petani yang ingin merangsang pertumbuhan tunas baru, memperbaiki warna daun, serta meningkatkan hasil panen tanaman sawit. 
+                Pupuk ini memberikan nutrisi yang seimbang untuk pertumbuhan yang optimal, membuat tanaman lebih sehat, lebih hijau, dan lebih produktif.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-20" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/map-daun-sawit.png"
+                    alt="Pupuk MAP Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/map-daun-sawit.png" alt="Pupuk MAP Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MAP Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 10% N (Nitrogen)</strong>: Mendukung pertumbuhan vegetatif tanaman, mempercepat perkembangan daun dan batang untuk tanaman yang lebih sehat dan subur.</p>
+                <p><strong>- 50% P2O5 (Fosfat)</strong>: Kandungan fosfat tinggi yang membantu perkembangan akar dan memperbaiki pembungaan serta meningkatkan ketahanan tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Merangsang Pertumbuhan Akar yang Kuat</strong>: Pupuk ini efektif dalam merangsang perkembangan akar yang lebih kuat, yang penting untuk penyerapan hara dan nutrisi dari tanah.</p>
+                <p><strong>- Mencegah Rontoknya Bunga dan Buah</strong>: Fosfat yang terkandung dalam pupuk ini berperan penting untuk memperkuat pembungaan, sehingga mengurangi risiko bunga dan buah rontok.</p>
+                <p><strong>- Mudah Larut dalam Air</strong>: Pupuk MAP sangat mudah larut dalam air, memastikan penyerapan nutrisi yang cepat dan efektif oleh tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MAP Daun Sawit</strong> adalah solusi ideal untuk memperbaiki kualitas tanaman sawit, terutama dalam hal pertumbuhan akar dan pembungaan. 
+                Dengan kandungan fosfat yang tinggi, pupuk ini memperkuat akar, mendukung pembungaan yang baik, serta mencegah bunga dan buah jatuh. 
+                Hasilnya, tanaman sawit Anda tumbuh lebih sehat, kuat, dan produktif.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-21" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/kcl-mop-daun-sawit.png"
+                    alt="Pupuk KCl/MOP Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/kcl-mop-daun-sawit.png" alt="Pupuk KCl/MOP Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk KCl/MOP Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 60% K2O (Kalium Oksida)</strong>: Kandungan kalium oksida tinggi yang membantu meningkatkan ketahanan tanaman terhadap stres lingkungan, terutama kekeringan, serta meningkatkan kualitas dan hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Hasil Panen</strong>: Pupuk ini efektif dalam meningkatkan hasil panen tanaman sawit dengan memberikan kalium yang penting untuk proses fotosintesis dan pembentukan buah.</p>
+                <p><strong>- Meningkatkan Kualitas Tanaman</strong>: Kandungan kalium oksida memperbaiki kualitas tanaman sawit, baik dari segi ukuran buah, rasa, maupun ketahanan terhadap penyakit.</p>
+                <p><strong>- Mencegah Kekeringan</strong>: Kalium membantu tanaman lebih tahan terhadap kekeringan dan stres lainnya, memastikan pertumbuhan yang lebih stabil meskipun dalam kondisi cuaca yang kurang mendukung.</p>
+                <p><strong>- Cocok untuk Semua Jenis Tanah</strong>: Pupuk MOP/KCl dapat digunakan di berbagai jenis tanah, menjadikannya pilihan yang fleksibel untuk petani sawit.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk KCl/MOP Daun Sawit</strong> adalah pilihan tepat untuk petani yang ingin meningkatkan hasil panen dan kualitas tanaman sawit. 
+                Dengan kandungan kalium oksida yang tinggi, pupuk ini mendukung tanaman untuk tumbuh lebih kuat, lebih tahan terhadap kekeringan, dan menghasilkan buah yang lebih berkualitas. 
+                Pupuk ini juga dapat diterapkan pada semua jenis tanah, memberikan solusi yang efisien dan efektif untuk pertanian sawit Anda.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-22" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/sp-36-daun-sawit.png"
+                    alt="Pupuk SP-36 Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/sp-36-daun-sawit.png" alt="Pupuk SP-36 Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk SP-36 Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 36% P2O5 (Fosfat)</strong>: Kandungan fosfat tinggi yang mendukung pembentukan akar yang kuat dan memacu proses pembungaan menjadi buah/biji.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Memacu Pembentukan Bunga Menjadi Buah/Biji</strong>: Fosfat dalam pupuk ini sangat efektif untuk merangsang pembungaan dan membantu proses konversi bunga menjadi buah atau biji, meningkatkan hasil panen.</p>
+                <p><strong>- Memperbaiki Sistem Perakaran</strong>: Kandungan fosfat yang tinggi membantu perkembangan akar yang lebih kuat, memungkinkan tanaman sawit untuk menyerap lebih banyak nutrisi dari tanah.</p>
+                <p><strong>- Meningkatkan Daya Tahan Tanaman Terhadap Penyakit</strong>: Pupuk ini juga berperan dalam meningkatkan ketahanan tanaman terhadap serangan penyakit, menjadikan tanaman lebih sehat dan produktif.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk SP-36 Daun Sawit</strong> adalah pilihan ideal untuk petani yang ingin meningkatkan pembungaan dan hasil panen tanaman sawit. 
+                Pupuk ini membantu memperbaiki sistem perakaran, memperkuat ketahanan tanaman terhadap penyakit, serta memastikan bahwa tanaman sawit Anda tumbuh lebih sehat, produktif, dan menghasilkan buah yang berkualitas tinggi.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-23" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/dap-daun-sawit.png"
+                    alt="Pupuk DAP Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/dap-daun-sawit.png" alt="Pupuk DAP Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk DAP Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 18% N (Nitrogen)</strong>: Mendukung pertumbuhan vegetatif dengan meningkatkan kesehatan daun, mempercepat pertumbuhan batang, dan merangsang pembentukan tunas baru.</p>
+                <p><strong>- 46% P2O5 (Fosfat)</strong>: Kandungan fosfat tinggi yang efektif untuk merangsang pembungaan, memperkuat akar, dan meningkatkan kualitas buah serta biji.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Memacu Pertumbuhan Generatif</strong>: Pupuk ini membantu merangsang pertumbuhan generatif tanaman, mempercepat pembungaan, dan meningkatkan pembentukan buah/biji untuk hasil panen yang lebih baik.</p>
+                <p><strong>- Menambah Kadar Protein pada Tanaman</strong>: Kandungan fosfat dalam pupuk DAP membantu meningkatkan kadar protein pada tanaman, meningkatkan kualitas hasil panen.</p>
+                <p><strong>- Mudah Larut dan Cepat Diserap</strong>: DAP Daun Sawit mudah larut dalam air, memastikan bahwa pupuk cepat diserap oleh tanaman, memberikan nutrisi yang cepat dan efisien.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk DAP Daun Sawit</strong> adalah pilihan terbaik untuk petani yang ingin merangsang pertumbuhan generatif tanaman sawit, mempercepat pembungaan, serta meningkatkan kadar protein pada hasil panen. 
+                Pupuk ini cepat diserap oleh tanaman dan membantu menghasilkan tanaman yang lebih sehat, kuat, dan lebih produktif.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-24" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/granular-amonium-klorida-daun-sawit.png"
+                    alt="Pupuk Granular Amonium Klorida Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/granular-amonium-klorida-daun-sawit.png" alt="Pupuk Granular Amonium Klorida Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk Granular Amonium Klorida Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 26% N (Nitrogen)</strong>: Kandungan nitrogen tinggi yang mendukung pertumbuhan tanaman secara optimal, mempercepat pembentukan daun, dan meningkatkan warna hijau tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Warna Hijau Tanaman</strong>: Kandungan nitrogen yang tinggi membantu tanaman sawit menjadi lebih hijau dan sehat, yang menandakan pertumbuhan yang optimal.</p>
+                <p><strong>- Mempercepat Pertumbuhan Tanaman</strong>: Pupuk ini mempercepat proses pertumbuhan tanaman, membantu tanaman untuk berkembang lebih cepat dan lebih kuat.</p>
+                <p><strong>- Mencegah Tanaman Menjadi Kerdil</strong>: Nitrogen membantu tanaman tetap subur dan mencegahnya menjadi kerdil, memastikan pertumbuhan yang maksimal dari akar hingga daun.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk Granular Amonium Klorida Daun Sawit</strong> adalah solusi ideal untuk petani yang ingin merangsang pertumbuhan tanaman sawit yang lebih cepat, memperbaiki warna daun, dan memastikan tanaman tumbuh sehat dan kuat. 
+                Dengan kandungan nitrogen yang tinggi, pupuk ini mendukung pembentukan daun yang hijau subur, meningkatkan vitalitas tanaman, dan mencegah tanaman mengalami pertumbuhan terhambat.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-25" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mkp-52-34-daun-sawit.png"
+                    alt="Pupuk MKP 52+34 Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mkp-52-34-daun-sawit.png" alt="Pupuk MKP 52+34 Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MKP 52+34 Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 52% P2O5 (Fosfat)</strong>: Kandungan fosfat tinggi yang mendukung pertumbuhan akar yang kuat dan pembungaan yang optimal.</p>
+                <p><strong>- 34% K2O (Kalium Oksida)</strong>: Membantu memperkuat tanaman, meningkatkan ketahanan terhadap stres, dan memperbaiki kualitas buah serta biji.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Produktivitas Hasil Panen</strong>: Pupuk MKP sangat efektif dalam meningkatkan hasil panen dengan memacu pembungaan dan pembesaran buah/umbi secara maksimal.</p>
+                <p><strong>- Memperbesar Umbi dan Mencegah Rontoknya Hasil Panen</strong>: Fosfat dan kalium membantu memperbesar umbi tanaman sawit, memperkuat struktur buah, serta mencegah kerontokan hasil panen.</p>
+                <p><strong>- Menjaga Kesehatan Tanaman</strong>: Pupuk ini meningkatkan ketahanan tanaman terhadap stres dan penyakit, memastikan pertumbuhan yang sehat dan stabil.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MKP 52+34 Daun Sawit</strong> adalah pilihan tepat untuk petani sawit yang ingin meningkatkan produktivitas dan kualitas hasil panen. 
+                Dengan kandungan fosfat dan kalium yang tinggi, pupuk ini tidak hanya memacu pembungaan dan pembesaran umbi, tetapi juga mencegah kerontokan hasil panen. 
+                Tanaman sawit Anda akan tumbuh lebih produktif, sehat, dan menghasilkan panen yang lebih berkualitas.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-26" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/kno3-daun-sawit.png"
+                    alt="Pupuk KNO3 Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/kno3-daun-sawit.png" alt="Pupuk KNO3 Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk KNO3 Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 13% N (Nitrogen)</strong>: Mendukung pertumbuhan vegetatif tanaman, mempercepat pembentukan daun, dan meningkatkan warna hijau yang sehat.</p>
+                <p><strong>- 45% K2O (Kalium Oksida)</strong>: Membantu meningkatkan ketahanan tanaman terhadap stres, meningkatkan kualitas dan ukuran buah serta memperkuat sistem perakaran.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Kualitas Aroma dan Rasa Hasil Panen</strong>: Kandungan kalium yang tinggi berperan penting dalam meningkatkan kualitas hasil panen, baik dari segi rasa maupun aroma tanaman sawit.</p>
+                <p><strong>- Menjaga Tanaman dari Penyakit</strong>: Pupuk ini membantu memperkuat daya tahan tanaman sawit terhadap penyakit dan stres lingkungan, meningkatkan ketahanan tanaman untuk menghasilkan buah yang optimal.</p>
+                <p><strong>- Meningkatkan Produksi Tanaman</strong>: Dengan kandungan kalium dan nitrogen yang tepat, KNO3 merangsang pertumbuhan tanaman yang sehat, menghasilkan tanaman yang lebih produktif dan berkualitas.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk KNO3 Daun Sawit</strong> adalah pilihan ideal untuk meningkatkan kualitas hasil panen tanaman sawit, terutama dari segi rasa dan aroma. 
+                Pupuk ini juga mendukung peningkatan produksi dengan menjaga tanaman dari penyakit serta memperkuat ketahanan tanaman, memastikan hasil panen yang lebih sehat, berkualitas, dan optimal.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-27" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/can-daun-sawit.png"
+                    alt="Pupuk CAN Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/can-daun-sawit.png" alt="Pupuk CAN Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk CAN Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 27% N (Nitrogen)</strong>: Kandungan nitrogen tinggi yang membantu pertumbuhan vegetatif tanaman, meningkatkan kesehatan daun dan batang.</p>
+                <p><strong>- 12% CaO (Kalsium Oksida)</strong>: Membantu memperbaiki struktur tanah yang bermasalah dengan keasaman, memberikan manfaat tambahan untuk pertumbuhan yang sehat.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Menyuburkan Tanah Asam</strong>: Pupuk ini sangat efektif untuk menyuburkan tanah dengan tingkat keasaman tinggi, membantu meningkatkan pH tanah agar lebih sesuai untuk pertumbuhan tanaman.</p>
+                <p><strong>- Memperkeras Buah dan Mencegah Pecah-pecah</strong>: Kalsium dalam pupuk ini berfungsi memperkeras buah, menjaga kualitas buah agar tidak mudah pecah, sehingga hasil panen lebih maksimal.</p>
+                <p><strong>- Mencegah Infeksi Jamur dan Penyakit</strong>: CAN membantu melindungi tanaman dari infeksi jamur dan penyakit busuk pangkal serta ujung buah, meningkatkan kesehatan dan ketahanan tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk CAN Daun Sawit</strong> adalah solusi efektif untuk petani yang ingin memperbaiki kualitas tanah, mempercepat pertumbuhan tanaman, dan menghasilkan buah yang lebih keras dan berkualitas. 
+                Dengan kandungan nitrogen dan kalsium, pupuk ini mendukung peningkatan hasil panen yang lebih sehat, serta melindungi tanaman dari kerusakan akibat penyakit dan jamur.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-28" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/ammonium-fosfat-daun-sawit.png"
+                    alt="Pupuk Ammonium Fosfat Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/ammonium-fosfat-daun-sawit.png" alt="Pupuk Ammonium Fosfat Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk Ammonium Fosfat Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 16% N (Nitrogen)</strong>: Mendukung pertumbuhan vegetatif tanaman, meningkatkan kesehatan daun dan batang agar tanaman tumbuh subur.</p>
+                <p><strong>- 20% P2O5 (Fosfat)</strong>: Memperkuat sistem perakaran, meningkatkan pembungaan, serta mempercepat proses pemasakan buah.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Hasil Panen yang Lebih Besar dan Berat</strong>: Pupuk ini berfungsi untuk meningkatkan ukuran dan berat hasil panen, memastikan kualitas buah yang lebih baik.</p>
+                <p><strong>- Meningkatkan Rasa dan Kualitas Hasil Panen</strong>: Fosfat dalam pupuk ini berperan dalam meningkatkan rasa dan kualitas hasil panen, sehingga menghasilkan buah yang lebih manis dan lezat.</p>
+                <p><strong>- Mencegah Kekeringan dan Stres Tanaman</strong>: Kandungan nitrogen dan fosfat membantu tanaman lebih tahan terhadap kekeringan dan mengurangi risiko tanaman stres dan mati, meningkatkan ketahanan tanaman di berbagai kondisi cuaca.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk Ammonium Fosfat Daun Sawit</strong> adalah pupuk ideal untuk petani yang ingin meningkatkan hasil panen secara signifikan. 
+                Dengan kandungan nitrogen dan fosfat yang seimbang, pupuk ini mempercepat pertumbuhan tanaman, meningkatkan kualitas dan ukuran buah, serta melindungi tanaman dari stres dan kekeringan.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+                                                                                                                                                                                                               
 
         <div id="product-29" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/kno-merah-daun-sawit.png"
+                    alt="Pupuk KNO Merah Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/kno-merah-daun-sawit.png" alt="Pupuk KNO Merah Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk KNO Merah Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 15% N (Nitrogen)</strong>: Meningkatkan pertumbuhan vegetatif tanaman, merangsang pembentukan daun hijau dan sehat.</p>
+                <p><strong>- 14% K2O (Kalium Oksida)</strong>: Memperkuat ketahanan tanaman terhadap stres dan meningkatkan kualitas serta ukuran bunga, buah, biji, dan umbi.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Kualitas Hasil Panen</strong>: Pupuk ini berfungsi untuk meningkatkan kualitas bunga, buah, biji, dan umbi tanaman sawit, memberikan hasil yang lebih besar dan berkualitas.</p>
+                <p><strong>- Meningkatkan Ketahanan Tanaman terhadap Penyakit dan Hama</strong>: Kandungan kalium yang tinggi berperan dalam meningkatkan ketahanan tanaman terhadap berbagai jenis hama dan penyakit yang dapat merusak hasil panen.</p>
+                <p><strong>- Mendukung Pertumbuhan Sehat dan Optimal</strong>: Dengan kandungan nitrogen yang mendukung pertumbuhan vegetatif yang kuat, tanaman akan tumbuh lebih sehat dan produktif.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk KNO Merah Daun Sawit</strong> adalah solusi tepat untuk petani sawit yang ingin meningkatkan kualitas dan kuantitas hasil panen. 
+                Dengan kandungan kalium dan nitrogen yang seimbang, pupuk ini tidak hanya memperbaiki kualitas bunga dan buah, tetapi juga melindungi tanaman dari penyakit dan hama, memastikan hasil yang lebih optimal dan berkualitas.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        
+        <div id="product-30" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-1">
                 <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/daunsawit-zinc.png"
                     alt="Zinc Sulfat DAUN SAWIT">
@@ -164,9 +995,6 @@
                     ketahanan tanaman sawit. Dengan meningkatkan toleransi terhadap hama dan penyakit serta mempercepat
                     pertumbuhan tanaman, pupuk ini juga membantu mengatasi masalah defisiensi zinc pada tanah masam,
                     memberikan manfaat jangka panjang bagi kesehatan tanaman dan hasil panen yang optimal. </p>
-                <!-- <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 65.000</p>
-            <p class="text-xs line-through text-red-600 pb-2">Rp 70.000</p>
-            <p class="text-gray-600 text-sm">Pupuk Mikro untuk Meningkatkan Toleransi dan Pertumbuhan Tanaman!</p> -->
 
             </div>
 
@@ -176,18 +1004,779 @@
             </a>
         </div>
 
-        <div id="product-30" class="product-detail hidden p-5 border rounded shadow text-center">
-            <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/daunsawit-kieserite.png"
-                alt="KIESERITE DAUN SAWIT">
-            <p class="text-gray-700 text-sm font-semibold">Pupuk</p>
-            <h2 class="font-bold text-sm md:text-base">KIESERITE DAUN SAWIT</h2>
-            <p class="text-gray-600 mt-2 text-xs md:text-base">Rp 65.000</p>
-            <p class="text-xs line-through text-red-600 pb-2">Rp 70.000</p>
-            <p class="text-gray-600 text-sm">Pupuk Magnesium untuk Pertumbuhan Optimal Tanaman Sawit!</p>
-            <a id="buyProductButton" href="/form"
-                class="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk
-                Ini</a>
+        <div id="product-31" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/kieserite-daun-sawit.png"
+                    alt="Pupuk KIESERITE Daun Sawit">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/kieserite-daun-sawit.png" alt="Pupuk KIESERITE Daun Sawit">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk KIESERITE Daun Sawit</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 27% MGO (Magnesium Oksida)</strong>: Kandungan magnesium yang tinggi membantu proses fotosintesis dan memperkuat struktur tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meminimalisir Racun untuk Tanaman</strong>: Magnesium dalam pupuk Kieserite membantu mengurangi efek racun pada tanaman, memastikan tanaman tetap sehat dan bebas dari stres.</p>
+                <p><strong>- Meningkatkan Kuantitas Hasil Panen</strong>: Pupuk ini efektif meningkatkan kuantitas hasil panen dengan mendukung pertumbuhan yang lebih cepat dan kuat.</p>
+                <p><strong>- Memacu Pertumbuhan Tanaman pada Pembibitan Awal</strong>: Kieserite sangat bermanfaat untuk tanaman sawit pada tahap pembibitan, mempercepat perkembangan akar dan batang sehingga tanaman siap tumbuh optimal.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk Kieserite Daun Sawit</strong> adalah solusi tepat untuk meningkatkan kualitas dan kuantitas hasil panen sawit. 
+                Dengan kandungan magnesium yang mendukung proses fotosintesis dan memperkuat tanaman, pupuk ini tidak hanya meningkatkan hasil panen tetapi juga mempercepat pertumbuhan pada tahap pembibitan, menjaga tanaman tetap sehat dan tahan terhadap racun.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
         </div>
+        <div id="product-32" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-patenbiru.png"
+                    alt="Pupuk MESTI-PATENBIRU NPK 16-16-16">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-patenbiru.png" alt="Pupuk MESTI-PATENBIRU NPK 16-16-16">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-PATENBIRU NPK 16-16-16</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 16% N (Nitrogen Amonium)</strong>: Mendukung pertumbuhan vegetatif, mempercepat pembentukan daun dan batang.</p>
+                <p><strong>- 16% P2O5 (Mono Amonium Fosfat)</strong>: Memperkuat sistem perakaran dan meningkatkan pembungaan.</p>
+                <p><strong>- 16% K2O (Kalium Oksida)</strong>: Membantu meningkatkan ketahanan tanaman terhadap stres serta memperbaiki kualitas buah dan biji.</p>
+                <p><strong>- Mikro Chelated TE (B, Cu, Zn, S, Ca, Mg)</strong>: Mikro nutrisi lengkap untuk mendukung pertumbuhan optimal tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Cepat Larut dan Mudah Diserap</strong>: Pupuk ini larut dengan cepat, sehingga nutrisi langsung tersedia untuk tanaman.</p>
+                <p><strong>- Memacu Pertumbuhan Tanaman</strong>: Kandungan NPK seimbang membantu meningkatkan pertumbuhan tanaman secara keseluruhan.</p>
+                <p><strong>- Meningkatkan Kualitas dan Kuantitas Panen</strong>: Dengan mikro nutrisi tambahan, tanaman dapat menghasilkan buah yang lebih besar, sehat, dan berkualitas tinggi.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-PATENBIRU NPK 16-16-16</strong> adalah solusi ideal bagi petani yang ingin meningkatkan pertumbuhan dan hasil panen tanaman secara maksimal. 
+                Dengan keseimbangan nitrogen, fosfat, dan kalium, pupuk ini tidak hanya memperkuat sistem perakaran dan pembungaan, tetapi juga memastikan tanaman tumbuh lebih sehat, lebih kuat, dan lebih produktif.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-33" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/eurofoska.png"
+                    alt="Pupuk EUROFOSKA NPK 15-15-15">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/eurofoska.png" alt="Pupuk EUROFOSKA NPK 15-15-15">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk EUROFOSKA NPK 15-15-15</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 15% N (Nitrogen Amonium)</strong>: Mendukung pertumbuhan vegetatif, mempercepat pembentukan daun dan batang.</p>
+                <p><strong>- 15% P2O5 (Mono Amonium Fosfat)</strong>: Memperkuat sistem perakaran dan meningkatkan pembungaan.</p>
+                <p><strong>- 15% K2O (Kalium Oksida)</strong>: Membantu meningkatkan ketahanan tanaman terhadap stres serta memperbaiki kualitas buah dan biji.</p>
+                <p><strong>- Mikro Chelated TE (B, Cu, Zn, S, Ca, Mg)</strong>: Mikro nutrisi lengkap untuk mendukung pertumbuhan optimal tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Cepat Larut dan Mudah Diserap</strong>: Pupuk ini larut dengan cepat, sehingga nutrisi langsung tersedia untuk tanaman.</p>
+                <p><strong>- Memacu Pertumbuhan Tanaman</strong>: Kandungan NPK seimbang membantu meningkatkan pertumbuhan tanaman secara keseluruhan.</p>
+                <p><strong>- Meningkatkan Kualitas dan Kuantitas Panen</strong>: Dengan mikro nutrisi tambahan, tanaman dapat menghasilkan buah yang lebih besar, sehat, dan berkualitas tinggi.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk EUROFOSKA NPK 15-15-15</strong> adalah solusi ideal bagi petani yang ingin meningkatkan pertumbuhan dan hasil panen tanaman secara maksimal. 
+                Dengan keseimbangan nitrogen, fosfat, dan kalium, pupuk ini tidak hanya memperkuat sistem perakaran dan pembungaan, tetapi juga memastikan tanaman tumbuh lebih sehat, lebih kuat, dan lebih produktif.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-34" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/jago-fos.png"
+                    alt="Pupuk JAGO-FOS N 16%, P 20%, S 12%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/jago-fos.png" alt="Pupuk JAGO-FOS N 16%, P 20%, S 12%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk JAGO-FOS N 16%, P 20%, S 12%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 16% N (Nitrogen Amonium)</strong>: Mendukung pertumbuhan vegetatif tanaman, mempercepat pembentukan daun dan batang.</p>
+                <p><strong>- 20% P2O5 (Mono Amonium Fosfat)</strong>: Memperkuat sistem perakaran, meningkatkan pembungaan, dan mempercepat pemasakan buah.</p>
+                <p><strong>- 12% S (Sulfur)</strong>: Membantu dalam pembentukan protein tanaman, meningkatkan efisiensi penggunaan nitrogen, serta memperbaiki kualitas hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Memacu Pertumbuhan Tanaman</strong>: Kandungan nitrogen dan fosfat seimbang membantu tanaman tumbuh lebih cepat dan lebih sehat.</p>
+                <p><strong>- Memperkuat Akar dan Meningkatkan Produksi</strong>: Fosfat tinggi memperkuat sistem perakaran dan meningkatkan hasil panen.</p>
+                <p><strong>- Meningkatkan Kualitas Hasil Panen</strong>: Sulfur berperan dalam pembentukan protein dan meningkatkan nilai gizi hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk JAGO-FOS N 16%, P 20%, S 12%</strong> adalah solusi ideal bagi petani yang ingin meningkatkan pertumbuhan dan hasil panen tanaman. 
+                Dengan kombinasi nitrogen, fosfat, dan sulfur, pupuk ini tidak hanya mempercepat pertumbuhan tanaman tetapi juga memperbaiki kualitas dan kuantitas hasil panen secara keseluruhan.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-35" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mestro.png"
+                    alt="Pupuk MESTRO N 21%, S 23-24%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mestro.png" alt="Pupuk MESTRO N 21%, S 23-24%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTRO N 21%, S 23-24%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 21% N (Nitrogen Amonium)</strong>: Mendukung pertumbuhan vegetatif tanaman, mempercepat pembentukan daun hijau dan batang yang kuat.</p>
+                <p><strong>- 23-24% S (Sulfur)</strong>: Membantu meningkatkan efisiensi penyerapan nitrogen, memperbaiki struktur tanah, serta meningkatkan kualitas hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Mempercepat Pertumbuhan Tanaman</strong>: Kombinasi nitrogen dan sulfur mendukung pertumbuhan tanaman yang lebih cepat dan sehat.</p>
+                <p><strong>- Meningkatkan Efisiensi Pemupukan</strong>: Sulfur membantu tanaman dalam menyerap nitrogen dengan lebih optimal, sehingga penggunaan pupuk menjadi lebih efektif.</p>
+                <p><strong>- Memperbaiki Kualitas Tanah dan Hasil Panen</strong>: Sulfur membantu memperbaiki struktur tanah dan meningkatkan kandungan nutrisi dalam hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTRO N 21%, S 23-24%</strong> adalah pilihan ideal bagi petani yang ingin meningkatkan kesuburan tanah dan mempercepat pertumbuhan tanaman. 
+                Dengan kandungan nitrogen dan sulfur yang tinggi, pupuk ini membantu tanaman tumbuh lebih hijau, subur, dan menghasilkan panen berkualitas lebih tinggi.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-36" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mestac.png"
+                    alt="Pupuk MESTAC N 26%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mestac.png" alt="Pupuk MESTAC N 26%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTAC N 26%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 26% N (Nitrogen Amonium)</strong>: Mendukung pertumbuhan vegetatif tanaman, meningkatkan warna hijau daun, serta mempercepat perkembangan tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Merangsang dan Mempercepat Pertumbuhan Tanaman</strong>: Kandungan nitrogen tinggi mempercepat pertumbuhan tanaman sejak fase awal.</p>
+                <p><strong>- Membuat Daun Lebih Hijau</strong>: Nitrogen membantu pembentukan klorofil yang meningkatkan warna hijau daun, menandakan kesehatan tanaman.</p>
+                <p><strong>- Meningkatkan Ketahanan Tanaman terhadap Hama dan Penyakit</strong>: Dengan asupan nutrisi yang optimal, tanaman menjadi lebih tahan terhadap gangguan lingkungan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTAC N 26%</strong> adalah pilihan ideal bagi petani yang ingin meningkatkan pertumbuhan tanaman secara cepat dan efisien. 
+                Dengan kandungan nitrogen yang tinggi, pupuk ini membantu tanaman tumbuh lebih kuat, lebih hijau, dan lebih tahan terhadap serangan hama dan penyakit.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-37" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mestac-duo.png"
+                    alt="Pupuk MESTAC DUO N 26% + BORON">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mestac-duo.png" alt="Pupuk MESTAC DUO N 26% + BORON">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTAC DUO N 26% + BORON</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 26% N (Nitrogen Amonium)</strong>: Mendukung pertumbuhan vegetatif tanaman, meningkatkan pembentukan daun, dan mempercepat pertumbuhan tanaman.</p>
+                <p><strong>- 0.2% Boron</strong>: Membantu pembentukan tunas baru yang lebih sempurna dan meningkatkan penyerapan nutrisi.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Merangsang Pembentukan Tunas Baru yang Sempurna</strong>: Kombinasi nitrogen dan boron membantu tanaman menghasilkan tunas baru dengan kualitas lebih baik.</p>
+                <p><strong>- Membantu Pembentukan Daun Secara Optimal</strong>: Boron berperan dalam memperbaiki struktur dan pertumbuhan daun agar lebih sehat dan kuat.</p>
+                <p><strong>- Meningkatkan Ketahanan Tanaman terhadap Hama dan Penyakit</strong>: Daun yang terbentuk secara optimal membuat tanaman lebih hijau, subur, dan tahan terhadap serangan hama serta penyakit.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTAC DUO N 26% + BORON</strong> adalah pilihan tepat untuk petani yang ingin meningkatkan kualitas pertumbuhan tanaman. 
+                Dengan kombinasi nitrogen dan boron, pupuk ini memastikan pembentukan daun dan tunas yang lebih sempurna, menjadikan tanaman lebih sehat, hijau, dan produktif.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-38" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-cinta.png"
+                    alt="Pupuk MESTI-CINTA N 27%, CaO 12-15%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-cinta.png" alt="Pupuk MESTI-CINTA N 27%, CaO 12-15%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-CINTA N 27%, CaO 12-15%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 27% N (Nitrat)</strong>: Mendukung pertumbuhan vegetatif tanaman, mempercepat penghijauan daun, dan meningkatkan daya tahan tanaman.</p>
+                <p><strong>- 12-15% CaO (Kalsium Oksida)</strong>: Memperkuat struktur tanaman, membantu pembentukan bunga, serta mencegah kerontokan bunga dan buah.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Sebagai Pupuk Susulan</strong>: MESTI-CINTA sangat efektif digunakan sebagai pupuk susulan untuk menjaga pertumbuhan tanaman yang optimal.</p>
+                <p><strong>- Mempercepat Penghijauan Daun</strong>: Kandungan nitratnya mempercepat pembentukan daun hijau yang sehat dan subur.</p>
+                <p><strong>- Memperkuat dan Menjaga Tanaman Tetap Kokoh</strong>: Kalsium membantu memperkuat batang tanaman, membuatnya lebih tahan terhadap angin dan cuaca ekstrem.</p>
+                <p><strong>- Merangsang Pembungaan dan Mencegah Kerontokan Buah</strong>: Pupuk ini membantu merangsang pembentukan bunga serta mengurangi risiko bunga dan buah yang rontok sebelum panen.</p>
+                <p><strong>- Membuat Kulit Buah dan Umbi Lebih Cerah dan Halus</strong>: Kalsium dalam pupuk ini membantu menghasilkan buah dan umbi dengan tekstur kulit yang lebih halus dan tampilan lebih menarik.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-CINTA N 27%, CaO 12-15%</strong> adalah pilihan ideal bagi petani yang ingin meningkatkan pertumbuhan tanaman secara optimal. 
+                Dengan kombinasi nitrogen dan kalsium, pupuk ini tidak hanya mempercepat penghijauan daun, tetapi juga menjaga kekuatan tanaman, meningkatkan kualitas hasil panen, dan mencegah kerontokan bunga serta buah.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-39" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-fero.png"
+                    alt="Pupuk MESTI-FERO Fe 21%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-fero.png" alt="Pupuk MESTI-FERO Fe 21%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-FERO Fe 21%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 21% Fe (Ferum)</strong>: Membantu proses pembentukan klorofil, meningkatkan efisiensi fotosintesis, dan menjaga kesehatan tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Produksi Klorofil</strong>: Ferum dalam pupuk ini membantu tanaman menghasilkan klorofil lebih banyak, sehingga meningkatkan daya serap energi matahari.</p>
+                <p><strong>- Mencegah Klorosis pada Tanaman</strong>: MESTI-FERO efektif mencegah daun menguning akibat kekurangan zat besi, memastikan tanaman tetap hijau dan sehat.</p>
+                <p><strong>- Mendukung Pertumbuhan Optimal</strong>: Pupuk ini berperan penting dalam proses metabolisme tanaman, meningkatkan pertumbuhan yang kuat dan sehat.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-FERO Fe 21%</strong> adalah solusi ideal bagi petani yang ingin meningkatkan efisiensi fotosintesis dan pertumbuhan tanaman. Dengan kandungan ferum yang tinggi, pupuk ini tidak hanya mencegah klorosis tetapi juga meningkatkan produksi klorofil dan kesehatan tanaman secara keseluruhan.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-40" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-gas.png"
+                    alt="Pupuk MESTI-GAS N 21%, S 23-24%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-gas.png" alt="Pupuk MESTI-GAS N 21%, S 23-24%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-GAS N 21%, S 23-24%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 21% N (Nitrogen - Amonium)</strong>: Mendukung pertumbuhan vegetatif tanaman dengan mempercepat pembentukan daun hijau dan sehat.</p>
+                <p><strong>- 23-24% S (Sulfur)</strong>: Membantu sintesis protein dalam tanaman, meningkatkan efisiensi pemupukan, serta memperkuat daya tahan tanaman terhadap penyakit.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Mempercepat Pertumbuhan Tanaman</strong>: Kandungan nitrogen tinggi membantu tanaman tumbuh lebih cepat dan subur.</p>
+                <p><strong>- Meningkatkan Kesehatan Daun</strong>: Sulfur berperan penting dalam pembentukan enzim dan protein, menjaga daun tetap hijau dan sehat.</p>
+                <p><strong>- Meningkatkan Daya Tahan Tanaman</strong>: Kombinasi nitrogen dan sulfur membuat tanaman lebih kuat terhadap serangan hama dan penyakit.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-GAS N 21%, S 23-24%</strong> adalah pilihan ideal bagi petani yang ingin meningkatkan produktivitas dan ketahanan tanaman. Dengan keseimbangan nitrogen dan sulfur, pupuk ini mendukung pertumbuhan cepat, kesehatan daun, serta ketahanan tanaman terhadap kondisi lingkungan yang menantang.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-41" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mestikali.png"
+                    alt="Pupuk MESTIKALI K2O 60%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mestikali.png" alt="Pupuk MESTIKALI K2O 60%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTIKALI K₂O 60%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 60% K₂O (Kalium Oksida)</strong>: Membantu meningkatkan kualitas dan ukuran buah, serta memperkuat daya tahan tanaman terhadap stres lingkungan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Hasil Panen</strong>: Kalium tinggi mendukung pembentukan buah dan umbi yang lebih besar dan berkualitas.</p>
+                <p><strong>- Memperkuat Ketahanan Tanaman</strong>: Pupuk ini membantu tanaman lebih tahan terhadap kekeringan dan serangan penyakit.</p>
+                <p><strong>- Menyempurnakan Proses Fotosintesis</strong>: Kalium berperan penting dalam meningkatkan efisiensi penggunaan air dan nutrisi oleh tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTIKALI K₂O 60%</strong> adalah pilihan terbaik bagi petani yang ingin meningkatkan hasil panen dan daya tahan tanaman. Dengan kandungan kalium yang tinggi, pupuk ini mendukung pertumbuhan optimal, memperbaiki kualitas buah, serta memperkuat tanaman dalam menghadapi kondisi lingkungan yang menantang.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-42" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mestikali-butir.png"
+                    alt="Pupuk MESTIKALI-BUTIR K2O 30%, MgO 12.5%, S 10%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mestikali-butir.png" alt="Pupuk MESTIKALI-BUTIR K2O 30%, MgO 12.5%, S 10%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTIKALI-BUTIR K₂O 30%, MgO 12.5%, S 10%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 30% K₂O (Kalium Oksida)</strong>: Membantu meningkatkan kualitas dan ukuran buah, serta memperkuat daya tahan tanaman terhadap stres lingkungan.</p>
+                <p><strong>- 12.5% MgO (Magnesium Oksida)</strong>: Mendukung proses fotosintesis dan pembentukan klorofil, membuat daun lebih hijau dan sehat.</p>
+                <p><strong>- 10% S (Sulfur)</strong>: Meningkatkan efisiensi penyerapan nitrogen dan mendukung pertumbuhan tanaman secara optimal.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Kualitas Hasil Panen</strong>: Kalium dan magnesium bekerja sama untuk menghasilkan buah yang lebih besar, manis, dan berkualitas.</p>
+                <p><strong>- Memperkuat Ketahanan Tanaman</strong>: Kandungan sulfur membantu meningkatkan ketahanan tanaman terhadap penyakit dan kondisi lingkungan yang kurang ideal.</p>
+                <p><strong>- Mendukung Proses Fotosintesis</strong>: Magnesium membantu pembentukan klorofil sehingga daun tetap hijau dan tanaman tumbuh dengan maksimal.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTIKALI-BUTIR K₂O 30%, MgO 12.5%, S 10%</strong> adalah pilihan ideal bagi petani yang ingin meningkatkan hasil panen dengan tanaman yang lebih kuat dan berkualitas tinggi. Dengan kombinasi kalium, magnesium, dan sulfur, pupuk ini mendukung pertumbuhan optimal, memperbaiki kualitas buah, serta meningkatkan ketahanan tanaman terhadap berbagai kondisi lingkungan.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-43" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-kisrit.png"
+                    alt="Pupuk MESTI-KISRIT MgO 27% + Sulfur">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-kisrit.png" alt="Pupuk MESTI-KISRIT MgO 27% + Sulfur">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-KISRIT MgO 27% + Sulfur</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 27% MgO (Magnesium Oksida)</strong>: Membantu proses fotosintesis, meningkatkan pembentukan klorofil, dan memperkuat pertumbuhan tanaman.</p>
+                <p><strong>- Plus Sulfur</strong>: Meningkatkan efisiensi penyerapan nitrogen, mendukung perkembangan akar, serta memperbaiki struktur tanah.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Memacu Proses Fotosintesis</strong>: Kandungan magnesium membantu pembentukan klorofil sehingga daun lebih hijau dan sehat.</p>
+                <p><strong>- Meningkatkan Hasil Panen</strong>: Kombinasi magnesium dan sulfur mendukung pertumbuhan tanaman yang lebih produktif dan berkualitas.</p>
+                <p><strong>- Menjaga Kesehatan Tanah</strong>: Sulfur berperan dalam memperbaiki kualitas tanah dan meningkatkan penyerapan unsur hara oleh tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-KISRIT MgO 27% + Sulfur</strong> adalah solusi tepat bagi petani yang ingin meningkatkan produktivitas tanaman dan menjaga kesehatan tanah. Dengan kandungan magnesium dan sulfur yang optimal, pupuk ini mempercepat pertumbuhan tanaman, meningkatkan hasil panen, serta memperkuat ketahanan tanaman terhadap kondisi lingkungan.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-44" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-kp.png"
+                    alt="Pupuk MESTI-KP P2O5 46% K2O 32%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-kp.png" alt="Pupuk MESTI-KP P2O5 46% K2O 32%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-KP P2O5 46% K2O 32%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 46% P2O5 (Fosfat)</strong>: Meningkatkan perkembangan akar, mempercepat pembungaan, dan membantu proses pemasakan buah.</p>
+                <p><strong>- 32% K2O (Kalium Oksida)</strong>: Memperkuat ketahanan tanaman terhadap stres dan meningkatkan kualitas serta ukuran buah.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Perkembangan Akar</strong>: Fosfat dalam pupuk ini membantu pertumbuhan akar yang kuat, mempercepat pembentukan bunga, dan memperbaiki hasil panen.</p>
+                <p><strong>- Meningkatkan Kualitas Hasil Panen</strong>: Kalium mendukung pembentukan buah yang lebih besar, meningkatkan rasa, serta memperpanjang daya simpan hasil panen.</p>
+                <p><strong>- Memperkuat Tanaman</strong>: Kombinasi fosfat dan kalium membantu meningkatkan daya tahan tanaman terhadap penyakit dan kondisi lingkungan yang tidak stabil.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-KP P2O5 46% K2O 32%</strong> adalah pilihan ideal bagi petani yang ingin meningkatkan kualitas dan kuantitas hasil panen. Dengan formulasi fosfat dan kalium yang optimal, pupuk ini mempercepat pertumbuhan tanaman, meningkatkan produktivitas, serta memperkuat daya tahan tanaman terhadap kondisi lingkungan yang menantang.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-45" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-mahakali.png"
+                    alt="Pupuk MESTI-MAHAKALI K2O 60%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-mahakali.png" alt="Pupuk MESTI-MAHAKALI K2O 60%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-MAHAKALI K2O 60%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 60% K2O (Kalium Oksida)</strong>: Menyediakan unsur kalium dalam jumlah tinggi untuk meningkatkan kualitas tanaman dan hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Kualitas Hasil Panen</strong>: Kalium membantu memperbesar ukuran buah, meningkatkan rasa, serta memperpanjang daya simpan hasil panen.</p>
+                <p><strong>- Memperkuat Ketahanan Tanaman</strong>: Pupuk ini meningkatkan ketahanan tanaman terhadap kondisi lingkungan ekstrem seperti kekeringan dan serangan penyakit.</p>
+                <p><strong>- Mendukung Proses Fotosintesis</strong>: Kalium berperan dalam meningkatkan efisiensi fotosintesis, sehingga tanaman lebih sehat dan produktif.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-MAHAKALI K2O 60%</strong> adalah pilihan ideal bagi petani yang ingin meningkatkan hasil panen dengan kualitas terbaik. Dengan kandungan kalium yang tinggi, pupuk ini membantu tanaman tumbuh lebih sehat, lebih kuat, dan menghasilkan buah yang lebih berkualitas.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-46" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-nitro.png"
+                    alt="Pupuk MESTI-NITRO N 21%, S 23-24%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-nitro.png" alt="Pupuk MESTI-NITRO N 21%, S 23-24%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-NITRO N 21%, S 23-24%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 21% N (Nitrogen)</strong>: Membantu pertumbuhan vegetatif tanaman dengan meningkatkan kesehatan daun dan batang.</p>
+                <p><strong>- 23-24% S (Sulfur)</strong>: Meningkatkan efisiensi penggunaan nitrogen dan mendukung pembentukan protein dalam tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Pertumbuhan Tanaman</strong>: Kombinasi nitrogen dan sulfur mempercepat pertumbuhan tanaman dengan menyediakan unsur hara esensial.</p>
+                <p><strong>- Meningkatkan Kualitas Daun dan Buah</strong>: Sulfur membantu sintesis protein dan enzim, yang penting untuk pertumbuhan optimal.</p>
+                <p><strong>- Meningkatkan Ketahanan Tanaman</strong>: Pupuk ini memperkuat ketahanan tanaman terhadap kondisi lingkungan yang kurang optimal.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-NITRO</strong> adalah solusi ideal untuk petani yang ingin meningkatkan pertumbuhan dan hasil panen tanaman. Dengan kandungan nitrogen dan sulfur yang seimbang, pupuk ini membantu tanaman tumbuh lebih kuat, sehat, dan produktif.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-47" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-patenhijo.png"
+                    alt="Pupuk MESTI-PATENHIJO NPK 15-10-20">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-patenhijo.png" alt="Pupuk MESTI-PATENHIJO NPK 15-10-20">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-PATENHIJO NPK 15-10-20</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 15% N (Nitrogen)</strong>: Mendukung pertumbuhan vegetatif tanaman dan meningkatkan kesehatan daun serta batang.</p>
+                <p><strong>- 10% P2O5 (Fosfat)</strong>: Memperkuat sistem perakaran, mendukung pembungaan, dan mempercepat pematangan buah.</p>
+                <p><strong>- 20% K2O (Kalium Oksida)</strong>: Meningkatkan kualitas serta ukuran buah, biji, dan umbi serta memperkuat ketahanan tanaman terhadap stres.</p>
+                <p><strong>- Unsur Mikro (B, Cu, Zn, S, Ca, Mg)</strong>: Membantu meningkatkan efisiensi penyerapan hara dan kesehatan tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Pupuk Cepat Larut</strong>: Memastikan tanaman dapat dengan cepat menyerap nutrisi yang dibutuhkan.</p>
+                <p><strong>- Meningkatkan Pertumbuhan dan Produksi</strong>: Kombinasi nitrogen, fosfat, dan kalium mendukung pertumbuhan tanaman dan hasil panen yang lebih maksimal.</p>
+                <p><strong>- Meningkatkan Ketahanan Tanaman</strong>: Kalium dalam pupuk ini membantu tanaman lebih tahan terhadap penyakit dan perubahan cuaca ekstrem.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-PATENHIJO</strong> adalah pilihan terbaik bagi petani yang ingin meningkatkan pertumbuhan tanaman, memperkuat akar, dan menghasilkan panen berkualitas tinggi. Dengan kandungan NPK seimbang serta unsur mikro yang lengkap, pupuk ini memberikan manfaat optimal bagi pertanian modern.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-48" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-patenhijo-premium.png"
+                    alt="Pupuk MESTI-PATENHIJO PREMIUM NPK 15-10-20">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-patenhijo-premium.png" alt="Pupuk MESTI-PATENHIJO PREMIUM NPK 15-10-20">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-PATENHIJO PREMIUM NPK 15-10-20</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 15% N (Nitrogen)</strong>: Mendukung pertumbuhan vegetatif tanaman dan meningkatkan kesehatan daun serta batang.</p>
+                <p><strong>- 10% P2O5 (Fosfat)</strong>: Memperkuat sistem perakaran, mendukung pembungaan, dan mempercepat pematangan buah.</p>
+                <p><strong>- 20% K2O (Kalium Oksida)</strong>: Meningkatkan kualitas serta ukuran buah, biji, dan umbi serta memperkuat ketahanan tanaman terhadap stres.</p>
+                <p><strong>- Unsur Mikro (B, Cu, Zn, S, Ca, Mg)</strong>: Membantu meningkatkan efisiensi penyerapan hara dan kesehatan tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Pupuk Cepat Larut</strong>: Memastikan tanaman dapat dengan cepat menyerap nutrisi yang dibutuhkan.</p>
+                <p><strong>- Formula Premium</strong>: Komposisi unsur hara yang lebih optimal untuk mendukung pertumbuhan tanaman yang lebih kuat dan sehat.</p>
+                <p><strong>- Meningkatkan Ketahanan Tanaman</strong>: Kalium dalam pupuk ini membantu tanaman lebih tahan terhadap penyakit dan perubahan cuaca ekstrem.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-PATENHIJO PREMIUM</strong> adalah pilihan terbaik bagi petani yang ingin meningkatkan pertumbuhan tanaman, memperkuat akar, dan menghasilkan panen berkualitas tinggi. Dengan kandungan NPK seimbang serta unsur mikro yang lengkap, pupuk ini memberikan manfaat optimal bagi pertanian modern.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-49" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-rock.png"
+                    alt="Pupuk MESTI-ROCK P2O5 27%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-rock.png" alt="Pupuk MESTI-ROCK P2O5 27%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-ROCK P2O5 27%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 27% P2O5 (Fosfat)</strong>: Mendukung pertumbuhan akar yang kuat, meningkatkan pembungaan, dan mempercepat proses pematangan buah.</p>
+                <p><strong>- Plus Kalsium</strong>: Membantu memperkuat struktur tanaman dan meningkatkan daya tahan terhadap kondisi lingkungan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Sumber Fosfat Berkualitas</strong>: Mengandung fosfat alami yang larut secara bertahap, memberikan nutrisi yang berkelanjutan bagi tanaman.</p>
+                <p><strong>- Mempercepat Pertumbuhan Akar</strong>: Fosfat dalam pupuk ini mendukung perkembangan sistem perakaran yang lebih baik, memungkinkan tanaman menyerap lebih banyak nutrisi dan air.</p>
+                <p><strong>- Meningkatkan Produktivitas Tanaman</strong>: Memastikan tanaman dapat berbunga dan berbuah lebih cepat dengan hasil yang lebih optimal.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-ROCK</strong> adalah solusi ideal bagi petani yang ingin meningkatkan pertumbuhan akar dan mempercepat fase berbunga dan berbuah pada tanaman. Dengan kandungan fosfat yang tinggi dan tambahan kalsium, pupuk ini memberikan nutrisi yang dibutuhkan untuk menghasilkan panen berkualitas tinggi.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-50" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-tsp.png"
+                    alt="Pupuk MESTI-TSP P2O5 46%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-tsp.png" alt="Pupuk MESTI-TSP P2O5 46%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-TSP P2O5 46%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 46% P2O5 (Fosfat)</strong>: Mendukung pertumbuhan akar yang kuat, mempercepat pembungaan, serta meningkatkan produksi buah dan biji.</p>
+                <p><strong>- Plus Kalsium & Sulfur</strong>: Membantu memperkuat dinding sel tanaman dan meningkatkan ketahanan terhadap hama serta penyakit.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Sumber Fosfat Berkualitas Tinggi</strong>: Mengandung fosfat dalam bentuk yang mudah diserap oleh tanaman untuk pertumbuhan yang optimal.</p>
+                <p><strong>- Meningkatkan Daya Serap Nutrisi</strong>: Fosfat membantu tanaman menyerap lebih banyak nutrisi dari tanah, mendukung perkembangan akar dan batang yang kuat.</p>
+                <p><strong>- Menjaga Kesehatan Tanaman</strong>: Kombinasi kalsium dan sulfur membantu memperkuat struktur tanaman dan meningkatkan daya tahan terhadap kondisi lingkungan yang kurang menguntungkan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-TSP</strong> adalah pilihan tepat untuk petani yang ingin meningkatkan kesuburan tanah dan mempercepat fase pertumbuhan tanaman. Dengan kandungan fosfat yang tinggi serta tambahan kalsium dan sulfur, pupuk ini membantu meningkatkan hasil panen dan memperkuat tanaman terhadap berbagai tantangan lingkungan.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-51" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-za.png"
+                    alt="Pupuk MESTI-ZA N 21%, S 23-24%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-za.png" alt="Pupuk MESTI-ZA N 21%, S 23-24%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-ZA N 21%, S 23-24%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 21% N (Nitrogen)</strong>: Meningkatkan pertumbuhan tanaman, merangsang pembentukan daun hijau dan sehat.</p>
+                <p><strong>- 23-24% S (Sulfur)</strong>: Membantu pembentukan protein dan enzim, serta meningkatkan efisiensi penggunaan nitrogen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Pertumbuhan Tanaman</strong>: Kombinasi nitrogen dan sulfur membantu tanaman tumbuh lebih cepat dan sehat.</p>
+                <p><strong>- Meningkatkan Produksi dan Kualitas Hasil Panen</strong>: Kandungan sulfur membantu meningkatkan kualitas hasil panen dengan memperbaiki warna, rasa, dan daya tahan produk pertanian.</p>
+                <p><strong>- Meningkatkan Ketahanan Tanaman</strong>: Sulfur berperan dalam meningkatkan ketahanan tanaman terhadap penyakit dan kondisi lingkungan yang kurang menguntungkan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-ZA</strong> adalah pilihan ideal bagi petani yang ingin meningkatkan pertumbuhan tanaman dan hasil panen. Dengan kombinasi nitrogen dan sulfur dalam bentuk kristal, pupuk ini memberikan nutrisi penting bagi tanaman, memastikan pertumbuhan optimal, serta meningkatkan daya tahan terhadap penyakit dan kondisi lingkungan yang kurang menguntungkan.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-52" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesti-zinc.png"
+                    alt="Pupuk MESTI-ZINC Zn 21%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesti-zinc.png" alt="Pupuk MESTI-ZINC Zn 21%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTI-ZINC Zn 21%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 21% Zn (Zinc)</strong>: Berperan dalam pembentukan enzim dan hormon tanaman yang penting untuk pertumbuhan optimal.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Pertumbuhan Tanaman</strong>: Zinc membantu dalam sintesis protein dan pembelahan sel, yang penting untuk pertumbuhan tanaman yang sehat.</p>
+                <p><strong>- Mencegah Defisiensi Zinc</strong>: Kekurangan zinc dapat menyebabkan daun kecil, klorosis, dan pertumbuhan terhambat. Pupuk ini membantu mencegah masalah tersebut.</p>
+                <p><strong>- Mendukung Produksi Hormon Tanaman</strong>: Zinc berperan dalam produksi auksin, hormon yang penting untuk perkembangan tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTI-ZINC</strong> adalah solusi ideal untuk meningkatkan pertumbuhan tanaman dan mencegah defisiensi zinc yang dapat menghambat hasil panen. Dengan kandungan zinc tinggi, pupuk ini mendukung pembentukan enzim dan hormon, memastikan tanaman tumbuh optimal dan hasil panen meningkat.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-53" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mestical-gold.png"
+                    alt="Pupuk MESTICAL GOLD N 15%, CaO 26%, + Boron">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mestical-gold.png" alt="Pupuk MESTICAL GOLD N 15%, CaO 26%, + Boron">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTICAL GOLD N 15%, CaO 26%, + Boron</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 15% N (Nitrat)</strong>: Mendukung pertumbuhan tanaman dengan cepat dan efisien.</p>
+                <p><strong>- 26% CaO (Kalsium Oksida)</strong>: Memperkuat dinding sel tanaman, meningkatkan daya tahan terhadap penyakit.</p>
+                <p><strong>- Plus Boron</strong>: Mendukung pembentukan bunga dan buah yang sehat.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Memperkuat Struktur Tanaman</strong>: Kandungan kalsium membantu memperkuat dinding sel tanaman, sehingga tanaman lebih tahan terhadap serangan penyakit dan kondisi lingkungan yang buruk.</p>
+                <p><strong>- Meningkatkan Kualitas Hasil Panen</strong>: Nitrat dan boron berperan dalam pembentukan bunga dan buah, menghasilkan panen yang lebih besar dan berkualitas tinggi.</p>
+                <p><strong>- Mempercepat Penyerapan Nutrisi</strong>: Kandungan nitrat dalam pupuk ini mudah diserap oleh tanaman, sehingga pertumbuhan menjadi lebih cepat dan optimal.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTICAL GOLD</strong> adalah solusi terbaik bagi petani yang ingin meningkatkan pertumbuhan dan kualitas hasil panen. Dengan kombinasi nitrogen, kalsium, dan boron, pupuk ini tidak hanya membantu tanaman tumbuh lebih cepat, tetapi juga meningkatkan daya tahan terhadap penyakit dan meningkatkan hasil panen yang lebih optimal.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-54" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mesticop-ultra.png"
+                    alt="Pupuk MESTICOP-ULTRA Cu 24%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mesticop-ultra.png" alt="Pupuk MESTICOP-ULTRA Cu 24%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTICOP-ULTRA Cu 24%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 24% Cu (Tembaga)</strong>: Membantu dalam proses fotosintesis dan pembentukan enzim penting dalam tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Efisiensi Fotosintesis</strong>: Kandungan tembaga mendukung produksi klorofil, membantu tanaman menyerap lebih banyak energi matahari.</p>
+                <p><strong>- Memperkuat Struktur Tanaman</strong>: Tembaga berperan penting dalam pembentukan dinding sel yang lebih kuat, meningkatkan daya tahan tanaman.</p>
+                <p><strong>- Meningkatkan Produktivitas Tanaman</strong>: Dengan enzim yang lebih aktif, tanaman dapat tumbuh lebih cepat dan menghasilkan panen berkualitas tinggi.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTICOP-ULTRA</strong> adalah pilihan ideal bagi petani yang ingin meningkatkan pertumbuhan tanaman serta ketahanan terhadap stres lingkungan. Dengan kandungan tembaga yang tinggi, pupuk ini membantu tanaman dalam proses fotosintesis, memperkuat jaringan tanaman, dan meningkatkan hasil panen yang optimal.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-55" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mestifos.png"
+                    alt="Pupuk MESTIFOS N 16%, P 20%, S 12%">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mestifos.png" alt="Pupuk MESTIFOS N 16%, P 20%, S 12%">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MESTIFOS N 16%, P 20%, S 12%</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 16% N (Nitrogen)</strong>: Membantu pertumbuhan daun dan mempercepat pembentukan klorofil.</p>
+                <p><strong>- 20% P2O5 (Fosfat)</strong>: Meningkatkan perkembangan akar dan mempercepat pertumbuhan tanaman.</p>
+                <p><strong>- 12% S (Sulfur)</strong>: Membantu pembentukan protein dan meningkatkan kualitas hasil panen.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Pertumbuhan Tanaman</strong>: Kombinasi nitrogen dan fosfat memastikan pertumbuhan optimal sejak fase awal.</p>
+                <p><strong>- Memperkuat Akar dan Batang</strong>: Fosfat yang tinggi memperkuat sistem perakaran dan meningkatkan daya serap nutrisi.</p>
+                <p><strong>- Meningkatkan Produktivitas</strong>: Sulfur membantu dalam sintesis protein, sehingga menghasilkan panen yang lebih berkualitas.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MESTIFOS</strong> adalah pilihan tepat bagi petani yang ingin meningkatkan pertumbuhan tanaman sejak tahap awal. Dengan kombinasi nitrogen, fosfat, dan sulfur, pupuk ini memberikan nutrisi yang seimbang untuk mendukung pertumbuhan yang lebih cepat, akar yang lebih kuat, dan hasil panen yang lebih tinggi.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-56" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mahkota-borate.png"
+                    alt="Pupuk MAHKOTA BORATE">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mahkota-borate.png" alt="Pupuk MAHKOTA BORATE">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk Mikro</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MAHKOTA BORATE</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- B₂O₃ 46%</strong>: Sumber utama boron yang esensial bagi tanaman.</p>
+                <p><strong>- Na₂O 20%</strong>: Kandungan natrium oksida.</p>
+                <p><strong>- SO₄ 0,001 ppm</strong>: Kandungan sulfat dalam jumlah sangat kecil.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Membantu Pembelahan Sel</strong>: Boron berperan penting dalam proses pembelahan sel, mendukung pertumbuhan tanaman yang optimal.</p>
+                <p><strong>- Mendukung Metabolisme Nitrogen</strong>: Boron membantu dalam metabolisme nitrogen, yang esensial untuk pembentukan protein dalam tanaman.</p>
+                <p><strong>- Meningkatkan Proses Polinasi dan Produksi Benih</strong>: Boron memiliki peran kunci dalam proses polinasi dan produksi benih, yang mempengaruhi hasil panen secara keseluruhan.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MAHKOTA BORATE</strong> adalah solusi tepat untuk memenuhi kebutuhan boron pada tanaman, terutama di area atau jenis tanaman yang memerlukan tambahan boron. Dengan kandungan boron yang tinggi, pupuk ini membantu meningkatkan pertumbuhan, kualitas, dan kuantitas hasil panen.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-57" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mahkota-copper-sulphate.png"
+                    alt="Pupuk MAHKOTA COPPER SULPHATE">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mahkota-copper-sulphate.png" alt="Pupuk MAHKOTA COPPER SULPHATE">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk Mikro</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MAHKOTA COPPER SULPHATE</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 24% Cu (Tembaga)</strong>: Unsur mikro esensial yang berperan dalam berbagai proses fisiologis tanaman.</p>
+                <p><strong>- 37.5% SO₄ (Sulfat)</strong>: Membantu dalam sintesis protein dan enzim tanaman.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Aktivasi Enzim</strong>: Tembaga mengaktifkan enzim-enzim yang terlibat dalam sintesis lignin dan proses enzimatik lainnya, memperkuat struktur tanaman.</p>
+                <p><strong>- Mendukung Fotosintesis</strong>: Tembaga diperlukan dalam proses fotosintesis, membantu tanaman memproduksi energi yang dibutuhkan untuk pertumbuhan.</p>
+                <p><strong>- Meningkatkan Kualitas Tanaman</strong>: Tembaga membantu menambah rasa dan warna pada tanaman sayuran serta warna pada tanaman bunga.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MAHKOTA COPPER SULPHATE</strong> adalah solusi tepat untuk memenuhi kebutuhan tembaga pada tanaman, terutama di lahan gambut atau berpasir yang rentan kekurangan unsur ini. Dengan kandungan tembaga yang optimal, pupuk ini membantu meningkatkan pertumbuhan, kualitas, dan ketahanan tanaman terhadap penyakit.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+        <div id="product-58" class="product-detail hidden p-5 grid grid-cols-1 md:grid-cols-3">
+            <div class="col-span-1">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover" src="/static/img/produk/mahkota-kcl-canada.png"
+                    alt="Pupuk MAHKOTA KCL CANADA">
+            </div>
+            <div class="col-span-2 md:ml-8">
+                <img class="w-48 md:w-60 h-52 md:h-72 mx-auto object-cover md:hidden"
+                    src="/static/img/produk/mahkota-kcl-canada.png" alt="Pupuk MAHKOTA KCL CANADA">
+                <p class="text-gray-700 text-sm md:text-xl font-semibold mt-8 md:mt-0">Pupuk Tunggal Makro</p>
+                <h2 class="font-bold text-xl md:text-3xl">Pupuk MAHKOTA KCL CANADA</h2>
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Spesifikasi Produk :</h3>
+                <p><strong>- 60% K₂O (Kalium Oksida)</strong>: Sumber utama kalium yang esensial bagi tanaman.</p>
+                <p><strong>- Bentuk Kristal Homogen</strong>: Berwarna dominan merah dan putih yang seimbang.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Keunggulan :</h3>
+                <p><strong>- Meningkatkan Hasil Panen</strong>: Kalium berperan penting dalam meningkatkan produksi serta mutu dan kualitas hasil panen.</p>
+                <p><strong>- Memperkuat Tanaman</strong>: Kalium membantu memperkuat batang tanaman dan meningkatkan daya tahan terhadap hama penggerek dan penyakit.</p>
+                <p><strong>- Mengoptimalkan Penyerapan Nutrisi</strong>: Kalium bersifat mengoptimalkan serapan unsur hara lain, sehingga tanaman tumbuh lebih sehat.</p>
+        
+                <h3 class="font-bold md:font-semibold mt-4 md:mt-8 text-lg text-green-600">Manfaat :</h3>
+                <p><strong>Pupuk MAHKOTA KCL CANADA</strong> adalah solusi tepat untuk memenuhi kebutuhan kalium pada tanaman. Dengan kandungan kalium yang tinggi, pupuk ini membantu meningkatkan pertumbuhan, kualitas, dan kuantitas hasil panen. Selain itu, pupuk ini juga meningkatkan daya tahan tanaman terhadap hama dan penyakit, serta membantu tanaman menjadi lebih tahan terhadap kondisi lingkungan yang kurang optimal.</p>
+            </div>
+        
+            <a id="buyProductButton" href="/form" class="col-span-3 text-center mt-20 flex justify-center">
+                <p class="w-96 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Beli Produk Ini</p>
+            </a>
+        </div>
+                                                                                                                                                                                                                                
 
         <div id="product-31" class="product-detail hidden p-5 border rounded shadow text-center">
             <img class="w-28 md:w-32 h-36 md:h-48 mx-auto object-cover" src="/static/img/produk/mesti-patenbiru.png"

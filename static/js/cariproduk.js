@@ -10,10 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Event listener untuk tombol pencarian
     searchButton.addEventListener("click", searchProduct);
 
-    // Event listener untuk menekan Enter pada input
     searchInput.addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
             searchProduct();
